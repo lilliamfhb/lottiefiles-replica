@@ -1,0 +1,34 @@
+.c-wrapper {
+    width: 100%;
+    margin: 0 auto;
+}
+
+@media (min-width: 576px) {
+    .c-wrapper {
+        max-width: 576px;
+    }
+}
+
+@media (min-width: 640px) {
+    .c-wrapper {
+        max-width: 640px;
+    }
+}
+
+@media (min-width: 768px) {
+    .c-wrapper {
+        max-width: 768px;
+    }
+}
+
+@media (min-width: 992px) {
+    .c-wrapper {
+        max-width: 992px;
+    }
+}
+
+@media (min-width: 1200px)  {
+    .c-wrapper {
+        max-width: 1200px;
+    }
+}

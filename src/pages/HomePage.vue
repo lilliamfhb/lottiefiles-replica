@@ -1,8 +1,9 @@
 <template>
     <section class="c-section c-section--home">
-        Home from vuex: {{title}}
-
-        <button @click="modi('aaaaaa')">mofigicar</button>
+        <div class="c-wrapper">
+            Home from vuex: {{title}}
+            <button @click="modi('aaaaaa')">mofigicar</button>
+        </div>
     </section>
 </template>
 

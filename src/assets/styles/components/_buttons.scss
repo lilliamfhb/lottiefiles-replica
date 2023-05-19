@@ -1,0 +1,15 @@
+.c-button {
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+
+    &--primary {
+        background: $primary-color;
+        color: $white;
+
+        &:hover,
+        &:active,
+        &:focus {
+            box-shadow: 0 5px 20px -5px $primary-shadow;
+        }
+    }
+}
