@@ -1,6 +1,9 @@
 .c-button {
-    padding: 0.5rem 1rem;
+    padding: 0.75rem 1rem;
     border-radius: 0.5rem;
+    transition: all 0.3s;
+    font-weight: 700;
+    cursor: pointer;
 
     &--primary {
         background: $primary-color;
@@ -9,6 +12,8 @@
         &:hover,
         &:active,
         &:focus {
+            color: $white;
+            background: $primary-dark;
             box-shadow: 0 5px 20px -5px $primary-shadow;
         }
     }

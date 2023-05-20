@@ -2,6 +2,8 @@
     background: $soft-gray;
     padding: 0 1rem;
     margin: 0 auto;
+    color: $secondary-medium;
+    font-size: .875rem;
 
     &__figure {
         padding: 1.25rem 0;
@@ -14,6 +16,15 @@
 
     &__right {
         width: 100%;
+        margin-left: 2rem;
+    }
+
+    &__log-out {
+        padding-left: 0.5rem;
+
+        .c-button {
+            margin-left: 1rem;
+        }
     }
 
     &__search,
@@ -22,12 +33,81 @@
         font-size: 23px;
         padding: 0.5rem 0 0.5rem 0.5rem;
         margin-left: 0.25rem;
+        color: $black
+    }
+
+    &__search {
+        color: rgba($dark, 0.5);
+    }
+
+    .c-search {
+        width: 100%;
+        max-width: 300px;
+        min-width: 240px;
+        font-size: .875rem;
+        padding: 20px 0;
+        
+        &__icon {
+            top: 0;
+            left: 0;
+            width: 2.5rem;
+            font-size: 18px;
+            opacity: 0.7;
+        }
+
+        input {
+            padding: 0.6rem 0 0.6rem 2.5rem ;
+            border: 1px solid $white-shadow;
+            box-shadow: 0 5px 20px -5px rgba($dark, 0.07);
+            outline: none;
+            border-radius: 0.5rem;
+            width: 100%;
+            background: $soft-gray;
+
+            &::placeholder {
+                opacity: 0.8;
+            }
+        }
+    }
+
+    .c-nav {
+        &__list {
+            li {
+                margin-right: 1.5rem;
+            }
+        }
+    }
+}
+
+@media (min-width: 640px) {
+    .c-header {
+        &__logo {
+            height: 32px;
+        }
     }
 }
 
 @media (min-width: 1200px) {
     .c-header {
         padding: 0;
-        max-width: 1200px;
+        
+        .c-wrapper-header {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        &__logo {
+            height: 35px;
+        }
+
+        &__log-out {
+            padding-left: 1rem;
+        }
+
+        .c-nav {
+            li {
+                padding: 2rem 0;
+            }
+        }
     }
 }

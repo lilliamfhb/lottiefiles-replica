@@ -1,0 +1,15 @@
+.c-link {
+    &--primary {
+        color: $primary-color;
+        transition: all 0.3s;
+        font-weight: 700;
+        cursor: pointer;
+
+
+        &:hover,
+        &:active,
+        &:focus {
+            color: $primary-dark;
+        }
+    }
+}

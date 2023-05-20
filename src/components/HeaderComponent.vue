@@ -12,16 +12,24 @@
             <nav class="c-nav d-none d-lg-block">
               <ul class="c-nav__list d-flex align-items-center">
                 <li>
-                  <a href="">Products</a>
+                  <a href="">
+                    <span class="mr-2">Products</span> <Icon icon="carbon:chevron-down" /> 
+                  </a>
                 </li>
                 <li>
-                  <a href="">Integrations</a>
+                  <a href="">
+                    <span>Integrations</span> <Icon icon="carbon:chevron-down" />
+                  </a>
                 </li>
                 <li>
-                  <a href="">Customers</a>
+                  <a href="">
+                    <span>Customers</span> <Icon icon="carbon:chevron-down" />
+                  </a>
                 </li>
                 <li>
-                  <a href="">Resources</a>
+                  <a href="">
+                    <span>Resources</span> <Icon icon="carbon:chevron-down" />
+                  </a>
                 </li>
               </ul>
             </nav>
@@ -33,14 +41,21 @@
                 </button>
               </div>
               <div class="d-none d-lg-block">
-                <form class="c-search">
+                <form class="c-search position-relative">
+                  <span class="c-search__icon position-absolute h-100 d-flex align-items-center justify-content-center">
+                    <Icon icon="ic:round-search" />
+                  </span>
                   <input id="searchinput" type="search" autocomplete="off" placeholder="Search for animations">
                 </form>
               </div>
               <div class="d-none d-md-block">
                 <div class="c-header__log-out">
-                  <a>Login</a>
-                  <a class="c-button c-button--primary">Sign up</a>
+                  <a class="c-link c-link--primary">
+                    Login
+                  </a>
+                  <a class="c-button c-button--primary">
+                    Sign up
+                  </a>
                 </div>
               </div>
               <div class="d-lg-none">

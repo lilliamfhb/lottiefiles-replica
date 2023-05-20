@@ -1,4 +1,29 @@
 .c-footer {
-    background: $white;
-    padding: 1rem;
+    background: $soft-gray;
+    padding: 3rem 1.25rem;
+
+    &__subtitle {
+        margin-bottom: 1.5rem;
+        color: $text-strong;
+
+        &.app-column {
+            margin-bottom: 0.5rem;
+        }
+    }
+
+    &__list {
+        margin-bottom: 2.5rem;
+
+        li {
+            color: $secondary-color;
+            margin-bottom: 0.75rem;
+            font-size: 1rem;
+            line-height: 18px;
+        }
+
+        .app-icon {
+            width: 127px;
+            display: inline-block;
+        }
+    }
 }
