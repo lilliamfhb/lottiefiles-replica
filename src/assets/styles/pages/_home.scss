@@ -3,12 +3,15 @@
         .c-hero {
             padding: 3rem 1.25rem;
             background: $soft-gray;
+            overflow: hidden;
 
             &__content {
                 flex-grow: 1;
+                flex-basis:0;
 
                 .c-button {
                     padding: 1rem 2rem;
+                    font-size: 1.125rem;
                 }
             }
 
@@ -42,6 +45,7 @@
 
             &__ilustration {
                 width: 300px;
+                max-width: 100%;
                 margin: 0 auto;
                 overflow: hidden;
 
@@ -57,8 +61,16 @@
     .c-section {
         &--home {
             .c-hero {
+                padding: 5.5rem 0;
+
+                &__content {
+                    .c-button {
+                        padding: 1.125rem 4rem;
+                    }
+                }
+
                 &__title{
-                    font-size: 4rem;
+                    font-size: 64px;
                 }
 
                 &__text {
@@ -66,7 +78,7 @@
                 }
 
                 &__ilustration {
-                    width: 600px;
+                    width: 540px;
                 }
             }
         }
@@ -81,6 +93,10 @@
                     &-animation {
                         margin-left: 0;
                     }
+                }
+
+                &__ilustration {
+                    padding-left: 2rem;
                 }
             }
         }
