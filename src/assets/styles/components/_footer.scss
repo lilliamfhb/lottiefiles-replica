@@ -1,10 +1,12 @@
 .c-footer {
     background: $soft-gray;
     padding: 3rem 1.25rem;
+    color: $secondary-color;
 
     &__subtitle {
         margin-bottom: 1.5rem;
         color: $text-strong;
+        color: $secondary-dark;
 
         &.app-column {
             margin-bottom: 0.5rem;
@@ -25,5 +27,28 @@
             width: 127px;
             display: inline-block;
         }
+    }
+
+    &__regions {
+        font-size: 0.85rem;
+
+        li {
+            margin: 0 0.5rem;
+        }
+    }
+
+    &__socials {
+        li {
+            margin: 0 0.25rem 1.25rem;
+            font-size: 1.5rem;
+        }
+    }
+
+    &__center {
+        margin-bottom: 2.25rem;
+    }
+
+    &__bottom {
+        font-size: 14px;
     }
 }

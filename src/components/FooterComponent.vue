@@ -161,83 +161,98 @@
               </li>
             </ul>
           </div>
-          <div class="col-12 col-md-6">
-            <ul class="c-footer__socials d-flex align-items-center">
-              <li>
-                <a href="">aa</a>
-              </li>
-              <li>
-                <a href="">aa</a>
-              </li>
-              <li>
-                <a href="">aa</a>
-              </li>
-              <li>
-                <a href="">aa</a>
-              </li>
-              <li>
-                <a href="">aa</a>
-              </li>
-              <li>
-                <a href="">aa</a>
-              </li>
-            </ul>
-          </div>
-          <div class="col-12 col-md-6">
-            <div class="c-footer__regions d-flex align-items-center justify-content-md-end">
-              <p class="mr-4 mb-0">
-                Region:
-              </p>
-              <ul class="d-flex align-items-center">
-                <li>
-                  <a href="">aa</a>
-                </li>
-                <li>
-                  <a href="">aa</a>
-                </li>
-                <li>
-                  <a href="">aa</a>
-                </li>
-                <li>
-                  <a href="">aa</a>
-                </li>
-                <li>
-                  <a href="">aa</a>
-                </li>
-                <li>
-                  <a href="">aa</a>
-                </li>
-              </ul>
+          <div class="c-footer__center">
+            <div class="row align-items-center">
+              <div class="col-12 col-md-6">
+                <ul class="c-footer__socials d-flex align-items-center">
+                  <li>
+                    <a href="">
+                      <Icon icon="uil:facebook" />
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      <Icon icon="uil:instagram" />
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      <Icon icon="uil:twitter" />
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      <Icon icon="uil:youtube" />
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      <Icon icon="uil:dribbble" />
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      <Icon icon="uil:discord" />
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-12 col-md-6">
+                <div class="c-footer__regions d-flex align-items-center justify-content-md-end flex-wrap">
+                  <p class="mr-4 mb-1">
+                    <Icon class="fs-5" icon="mdi:web" />
+                    <span class="ms-1 me-2">Region:</span>
+                  </p>
+                  <ul class="d-flex align-items-center">
+                    <li>
+                      <a href="">Internacional</a>
+                    </li>
+                    <li>
+                      <a href="">Español</a>
+                    </li>
+                    <li>
+                      <a href="">Portugués</a>
+                    </li>
+                    <li>
+                      <a href="">한국어</a>
+                    </li>
+                    <li>
+                      <a href="">日本</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
             </div>
           </div>
+
           <div class="c-footer__bottom">
             <div class="row align-items-end">
               <div class="col-12 col-md-4">
-                <div class="c-footer__copy">
+                <div class="c-footer__copy mb-4">
                   <p class="mb-0">LottieFiles is by Design Barn Inc.</p>
                   <p class="mb-0">Copyright © 2023 Design Barn Inc. All rights reserved.</p>
                 </div>
               </div>
 
               <div class="col-12 col-md-4">
-                <div class="c-footer__copy text-md-center">
+                <div class="c-footer__copy text-md-center mb-4">
                   <p class="mb-0">Made with ❤️ <span>Peru</span></p>
                 </div>
               </div>
 
               <div class="col-12 col-md-4">
-                <ul class="c-footer__list-row d-flex alig-items-center justify-content-between flex-wrap">
+                <ul class="c-footer__list-row d-flex alig-items-center justify-content-between flex-wrap mb-4">
                   <li>
                     <a href="">Feedback</a>
                   </li>
                   <li>
-                    <a href="">Feedback</a>
+                    <a href="">Press</a>
                   </li>
                   <li>
-                    <a href="">Feedback</a>
+                    <a href="">Meet the team</a>
                   </li>
                   <li>
-                    <a href="">Feedback</a>
+                    <a href="">Careers</a>
                   </li>
                 </ul>
               </div>

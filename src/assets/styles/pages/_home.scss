@@ -1,6 +1,106 @@
 .c-section {
     &--home {
-        background: $gray;
-        padding: 2rem 1rem;
+        .c-hero {
+            padding: 3rem 1.25rem;
+            background: $soft-gray;
+
+            &__content {
+                flex-grow: 1;
+
+                .c-button {
+                    padding: 1rem 2rem;
+                }
+            }
+
+            &__title {
+                font-size: 2.875rem;
+                font-family: 'averta-b';
+                margin-bottom: 1rem;
+
+                span {
+                    font-family: 'averta-b'; 
+                }
+
+                &-animation {
+                    font-family: 'averta-b';
+                    max-width: 380px;
+                    margin: 0 auto;
+
+                    span {
+                        color: $primary-color;
+
+                    }
+                }
+            }
+
+            &__text {
+                color: $secondary-color;
+                font-size: 1rem;
+                margin-bottom: 2rem;
+                max-width: 50rem;
+            }
+
+            &__ilustration {
+                width: 300px;
+                margin: 0 auto;
+                overflow: hidden;
+
+                figure {
+                    transform: scale(1.3);
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 576px) {
+    .c-section {
+        &--home {
+            .c-hero {
+                &__title{
+                    font-size: 4rem;
+                }
+
+                &__text {
+                    font-size: 1.25rem;
+                }
+
+                &__ilustration {
+                    width: 600px;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .c-section {
+        &--home {
+            .c-hero {
+                &__title {
+                    &-animation {
+                        margin-left: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+    .c-section {
+        &--home {
+            .c-hero {
+                &__title {
+                    &-animation {
+                        max-width: 100%;
+                    }
+                }
+
+                &__text {
+                    font-size: 1.25rem;
+                }
+            }
+        }
     }
 }

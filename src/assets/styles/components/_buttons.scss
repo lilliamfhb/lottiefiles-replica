@@ -1,9 +1,10 @@
 .c-button {
     padding: 0.75rem 1rem;
-    border-radius: 0.5rem;
+    border-radius: 0.75rem;
     transition: all 0.3s;
     font-weight: 700;
     cursor: pointer;
+    display: inline-block;
 
     &--primary {
         background: $primary-color;
