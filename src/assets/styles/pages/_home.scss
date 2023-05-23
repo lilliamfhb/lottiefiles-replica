@@ -54,6 +54,24 @@
                 }
             }
         }
+        .c-companies {
+            background: $soft-gray;
+            padding: 0 1rem 2.5rem;
+
+            p {
+                color: $secondary-medium;
+                width: 66%;
+                margin: 0 auto;
+            }
+
+            &__list {
+                li div img {
+                    margin: 0.25rem 0.75rem;
+                    opacity: 0.25;
+                    height: 22px;
+                }
+            }
+        }
     }
 }
 
@@ -79,6 +97,17 @@
 
                 &__ilustration {
                     width: 540px;
+                }
+            }
+
+            .c-companies {
+                padding: 0 0 4rem;
+
+                &__list {
+                    li div img {
+                        height: 32px;
+                        margin: 0.75rem 1rem;
+                    }
                 }
             }
         }
