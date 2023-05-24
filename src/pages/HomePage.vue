@@ -203,23 +203,28 @@
                     Welcome to the largest community of designers and developers 
                     using Lottie. An extensive, curated library of free assets awaits you.
                 </p>
-
-                <div class="c-creations__grid d-grid">
-                    <div class="c-creations__item0"><img src="@/assets/images/hero-ilus.png" alt=""></div>
-                    <div class="c-creations__item0"><img src="@/assets/images/hero-ilus.png" alt=""></div>
-                    <div class="c-creations__item0"><img src="@/assets/images/hero-ilus.png" alt=""></div>
-                    <div class="c-creations__item0"><img src="@/assets/images/hero-ilus.png" alt=""></div>
-                    <div class="c-creations__item0"><img src="@/assets/images/hero-ilus.png" alt=""></div>
+                <div class="c-creations__slide w-100">
+                    <div class="c-creations__grid d-flex d-lg-grid">
+                        <div class="c-creations__item">
+                            <div class="c-pin text-uppercase position-absolute">
+                                Pick of the day
+                            </div>
+                            <img src="@/assets/images/sample.png" alt=""></div>
+                        <div class="c-creations__item"><img src="@/assets/images/sample.png" alt=""></div>
+                        <div class="c-creations__item"><img src="@/assets/images/sample.png" alt=""></div>
+                        <div class="c-creations__item"><img src="@/assets/images/sample.png" alt=""></div>
+                        <div class="c-creations__item"><img src="@/assets/images/sample.png" alt=""></div>
+                    </div>
                 </div>
 
-                <div class="c-creation__bottom text-center">
+                <div class="c-creations__bottom text-center">
                     <p>
                         All free Lottie animations are under 
                         <a href="" class="c-link c-link--primary">Creative Commons License</a>,
                         so go ahead and use them without hesitation.
                     </p>
                     <a href="" class="c-button c-button--primary">
-                        <span>Discover animations</span> <Icon icon="ph:arrow-right-light" />
+                        Discover animations <Icon icon="ph:arrow-right-light" />
                     </a>
                 </div>
             </div>
