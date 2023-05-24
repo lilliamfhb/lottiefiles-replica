@@ -1,33 +1,33 @@
-## Issue Description
+## Descripción del Problema
 
-Please provide a brief description of the issue.
+Proporciona una breve descripción del problema.
 
-## Expected Behavior
+## Comportamiento Esperado
 
-Describe what you would expect to happen.
+Describe qué esperarías que sucediera.
 
-## Current Behavior
+## Comportamiento Actual
 
-Describe what is currently happening.
+Describe qué está sucediendo actualmente.
 
-## Steps to Reproduce
+## Pasos para Reproducir
 
-Please provide detailed steps to reproduce the issue.
+Proporciona los pasos detallados para reproducir el problema.
 
-1. Step 1
-2. Step 2
-3. Step 3
+1. Paso 1
+2. Paso 2
+3. Paso 3
 
-## Screenshots
+## Capturas de Pantalla
 
-If applicable, add screenshots or error messages to help explain the issue.
+Si corresponde, agrega capturas de pantalla o mensajes de error para ayudar a explicar el problema.
 
-## Environment (optional)
+## Entorno (opcional)
 
-- Operating System: 
-- Browser (if applicable): 
-- Version (if applicable): 
+- Sistema Operativo: 
+- Navegador (si corresponde): 
+- Versión (si corresponde): 
 
-## Additional Information
+## Información Adicional
 
-Add any additional information or context about the issue here.
+Agrega cualquier información adicional o contexto sobre el problema aquí.

@@ -1,14 +1,18 @@
-# Description
+# Descripción
 
-Please include a summary of the change and which issue is fixed. Please also include relevant motivation and context. List any dependencies that are required for this change.
+Incluye un resumen del cambio y menciona qué problema se soluciona. También proporciona la motivación y contexto relevante. Enumera cualquier dependencia requerida para este cambio.
 
-## Type of change
+## Tipo de cambio
 
-- [ ] Bug fix (non-breaking change which fixes an issue)
-- [ ] New feature (non-breaking change which adds functionality)
-- [ ] Breaking change (fix or feature that would cause existing functionality to not work as expected)
-- [ ] This change requires a documentation update
+- [ ] Corrección de error (cambio que soluciona un problema sin romper funcionalidades existentes)
+- [ ] Nueva funcionalidad (cambio que agrega una nueva funcionalidad sin romper funcionalidades existentes)
+- [ ] Cambio que rompe compatibilidad (corrección o funcionalidad que haría que las funcionalidades existentes no funcionen como se esperaba)
+- [ ] Este cambio requiere una actualización de documentación
 
-## How Has This Been Tested?
+## ¿Cómo se ha probado?
 
-Please describe the tests that you ran to verify your changes. Provide instructions so we can reproduce. Please also list any relevant details for your test configuration
+Describe las pruebas que realizaste para verificar tus cambios. Proporciona instrucciones para poder reproducir las pruebas. También incluye cualquier detalle relevante sobre la configuración de tus pruebas.
+
+## Capturas de Pantalla
+
+Muestra aquí las capturas de pantalla.
