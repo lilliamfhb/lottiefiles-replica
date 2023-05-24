@@ -295,6 +295,10 @@
                     font-size: 3rem;
                 }
 
+                &__resume {
+                    font-size: 1.25rem;
+                }
+
                 .c-comparisons {
                     &__item {
                         figure {
@@ -316,6 +320,10 @@
 
             .c-creations {
                 padding: 4rem 1rem  1rem;
+
+                &__resume {
+                    font-size: 1.25rem;
+                } 
 
                 &__bottom {
                     padding-top: 50px;
