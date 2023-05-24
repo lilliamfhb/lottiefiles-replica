@@ -72,6 +72,104 @@
                 }
             }
         }
+
+        .c-features {
+            background: $soft-gray;
+            padding: 2rem 1.25rem;
+
+            &__title {
+                font-size: 2.25rem;
+                font-family: 'averta-b';
+                margin-bottom: 2.25rem;
+            }
+
+            &__resume {
+                color: $secondary-color;
+                font-size: 1.125rem;
+                margin-bottom: 1.125rem;
+                // font-family: 'averta-sb';
+            }
+
+            &__list {
+                max-width: 560px;
+                margin: 0 auto;
+            }
+
+            &__item {
+                h3 {
+                    font-size: 2.875rem;
+                    color: $primary-color;
+                    font-family: 'averta-b';
+                    padding: 0 1rem;
+
+                    span {
+                        font-size: 1.875rem;
+                        font-family: 'averta-b';
+                    }
+
+                    p {
+                        color: $secondary-color;
+                        font-size: 1.125rem;
+                        font-family: 'averta-sb';
+                    }
+                }
+            }
+
+            .c-link {
+                font-size: 1.25rem;
+                font-weight: 700;
+                margin-bottom: 2.5rem;
+
+                svg {
+                    font-size: 1.5rem;
+                }
+            }
+
+            .c-comparisons {
+                gap: 1rem;
+                margin-bottom: 2.5rem;
+
+                &__item {
+                    figure {
+                        width: 167px;
+                        height: 167px;
+                        border: 1px solid $white-shadow;
+                        border-radius: 1rem;
+                        margin-bottom: 0.75rem;
+                        overflow: hidden;
+    
+                        img {
+                            object-position: center;
+                        }
+                    }
+
+                    figcaption {
+                        font-size: 0.75rem;
+                        color: $secondary-soft;
+
+                        p {
+                            margin: 0;
+                        }
+                        
+                        .c-comparisons {
+                            &__item-name {
+                                color: $secondary-color;
+                            }
+        
+                            &__item-extra {
+                                margin-top: 0.2rem;
+                            }
+                        }
+                    }
+
+                    &.active {
+                        figure {
+                            border-color: $primary-color;
+                        }
+                    }
+                }
+            }
+        }
     }
 }
 
@@ -79,7 +177,7 @@
     .c-section {
         &--home {
             .c-hero {
-                padding: 5.5rem 0;
+                padding: 5.5rem 1rem;
 
                 &__content {
                     .c-button {
@@ -110,6 +208,32 @@
                     }
                 }
             }
+
+            .c-features {
+                padding: 4rem 1rem;
+
+                &__title{
+                    font-size: 3rem;
+                }
+
+                .c-comparisons {
+                    &__item {
+                        figure {
+                            border-width: 2px;
+                        }
+
+                        figcaption {
+                            font-size: 0.875rem;
+
+                            .c-comparisons {
+                                &__item-name {
+                                    font-size: 1.125rem;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
 }
@@ -132,6 +256,26 @@
     }
 }
 
+@media (min-width: 992px) {
+    .c-section {
+        &--home {
+            .c-features {
+                .c-comparisons {
+                    margin-bottom: 0;
+                }
+
+                &__item {
+                    h3 {
+                        font-size: 4rem;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+
 @media (min-width: 1200px) {
     .c-section {
         &--home {
@@ -144,6 +288,18 @@
 
                 &__text {
                     font-size: 1.25rem;
+                }
+            }
+
+            .c-features {
+                &__item {
+                    h3 {
+                        font-size: 6rem;
+
+                        span {
+                            font-size: 4rem;
+                        }
+                    }
                 }
             }
         }

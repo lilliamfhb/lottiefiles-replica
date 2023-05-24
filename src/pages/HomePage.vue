@@ -95,30 +95,29 @@
                 </ul>
             </div>
         </div>
-
         <div class="c-features">
             <div class="c-wrapper">
                 <h2 class="c-features__title text-center">The new industry standard</h2>
                 <p class="c-features__resume text-center">
-                    Lottie is an open-source animation file format that’s tiny, high quality, scriptable,
-                    interactive, and can be manipulated at runtime. The top 500 apps on the App
+                    Lottie is an open-source animation file format that’s tiny, high quality, scriptable, <br>
+                    interactive, and can be manipulated at runtime. The top 500 apps on the App <br>
                     store now use Lottie to engage users and enhance conversions.
                 </p>
-                <div>
-                    <a href="">Learn more about Lottie <Icon icon="carbon:chevron-down" /></a>
+                <div class="text-center mb-4 pb-3">
+                    <a href="" class="c-link c-link--primary">Learn more about Lottie <Icon icon="ph:arrow-right-light" /></a>
                 </div>
                 <div>
-                    <div class="row">
-                        <div class="col-12 col-md-6">
-                            <div class="c-comparisons">
-                                <div class="c-comparisons__item">
+                    <div class="row align-items-lg-center">
+                        <div class="col-12 col-lg-7 col-xl-6">
+                            <div class="c-comparisons d-flex align-items-start justify-content-center flex-wrap">
+                                <div class="c-comparisons__item ">
                                     <figure>
-                                        <img class="w-100 h-100" src="@/assets/images/hero-ilus.png" alt="">
+                                        <img class="w-100 h-100 object-fit-contain" src="@/assets/images/hero-ilus.png" alt="">
                                     </figure>
                                     <figcaption>
-                                        <div class="d-flex align-items-center justify-content-center ">
-                                            <span class="c-comparisons__item-name">Gif</span>
-                                            <span class="c-comparisons__item-feature">598 KB</span>
+                                        <div class="d-flex align-items-center justify-content-between">
+                                            <p class="c-comparisons__item-name">Gif</p>
+                                            <p class="c-comparisons__item-feature">598 KB</p>
                                         </div>
                                         <div>
                                             <span class="c-comparisons__item-extra"></span>
@@ -127,41 +126,41 @@
                                 </div>
                                 <div class="c-comparisons__item">
                                     <figure>
-                                        <img class="w-100 h-100" src="@/assets/images/hero-ilus.png" alt="">
+                                        <img class="w-100 h-100 object-fit-contain" src="@/assets/images/hero-ilus.png" alt="">
                                     </figure>
                                     <figcaption>
-                                        <div class="d-flex align-items-center justify-content-center ">
-                                            <span class="c-comparisons__item-name">Lottie JSON</span>
-                                            <span class="c-comparisons__item-feature">66 kb</span>
+                                        <div class="d-flex align-items-center justify-content-between">
+                                            <p class="c-comparisons__item-name">Lottie JSON</p>
+                                            <p class="c-comparisons__item-feature">66 kb</p>
                                         </div>
                                         <div>
-                                            <span class="c-comparisons__item-extra">89% smaller than GIF</span>
+                                            <p class="c-comparisons__item-extra">89% smaller than GIF</p>
                                         </div>
                                     </figcaption>
                                 </div>
-                                <div class="c-comparisons__item">
+                                <div class="c-comparisons__item active">
                                     <figure>
-                                        <img class="w-100 h-100" src="@/assets/images/hero-ilus.png" alt="">
+                                        <img class="w-100 h-100 object-fit-contain" src="@/assets/images/hero-ilus.png" alt="">
                                     </figure>
                                     <figcaption>
-                                        <div class="d-flex align-items-center justify-content-center ">
-                                            <span class="c-comparisons__item-name">dotLottie</span>
-                                            <span class="c-comparisons__item-feature">8 KB</span>
+                                        <div class="d-flex align-items-center justify-content-between">
+                                            <p class="c-comparisons__item-name">dotLottie</p>
+                                            <p class="c-comparisons__item-feature">8 KB</p>
                                         </div>
                                         <div>
-                                            <span class="c-comparisons__item-extra">99% smaller than GIF</span>
+                                            <p class="c-comparisons__item-extra">99% smaller than GIF</p>
                                         </div>
                                     </figcaption>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-12 col-md-6">
-                            <div>
+                        <div class="col-12 col-lg-5 col-xl-6">
+                            <div class="c-features__list">
                                 <div class="row">
                                     <div class="col-6">
                                         <div class="c-features__item">
                                             <h3>
-                                                600 <span>%</span>
+                                                600<span>%</span>
                                                 <p>smaller when compared to GIF</p>
                                             </h3>
                                         </div>
@@ -169,15 +168,7 @@
                                     <div class="col-6">
                                         <div class="c-features__item">
                                             <h3>
-                                                600 <span>%</span>
-                                                <p>smaller when compared to GIF</p>
-                                            </h3>
-                                        </div>
-                                    </div>
-                                    <div class="col-6">
-                                        <div class="c-features__item">
-                                            <h3>
-                                                10 <span>x</span>
+                                                10<span>x</span>
                                                 <p>faster to ship</p>
                                             </h3>
                                         </div>
@@ -185,7 +176,7 @@
                                     <div class="col-6">
                                         <div class="c-features__item">
                                             <h3>
-                                                10 <span>x</span>
+                                                10<span>x</span>
                                                 <p>Boost in user conversion & engagement</p>
                                             </h3>
                                         </div>
@@ -202,6 +193,34 @@
                             </div>
                         </div>
                     </div>
+                </div>
+            </div>
+        </div>
+        <div class="c-creations">
+            <div class="c-wrapper">
+                <h2 class="c-creations__title text-center">Legendary creators and their creations</h2>
+                <p class="c-creations__resume text-center">
+                    Welcome to the largest community of designers and developers 
+                    using Lottie. An extensive, curated library of free assets awaits you.
+                </p>
+
+                <div class="c-creations__grid d-grid">
+                    <div class="c-creations__item0"><img src="@/assets/images/hero-ilus.png" alt=""></div>
+                    <div class="c-creations__item0"><img src="@/assets/images/hero-ilus.png" alt=""></div>
+                    <div class="c-creations__item0"><img src="@/assets/images/hero-ilus.png" alt=""></div>
+                    <div class="c-creations__item0"><img src="@/assets/images/hero-ilus.png" alt=""></div>
+                    <div class="c-creations__item0"><img src="@/assets/images/hero-ilus.png" alt=""></div>
+                </div>
+
+                <div class="c-creation__bottom text-center">
+                    <p>
+                        All free Lottie animations are under 
+                        <a href="" class="c-link c-link--primary">Creative Commons License</a>,
+                        so go ahead and use them without hesitation.
+                    </p>
+                    <a href="" class="c-button c-button--primary">
+                        <span>Discover animations</span> <Icon icon="ph:arrow-right-light" />
+                    </a>
                 </div>
             </div>
         </div>
