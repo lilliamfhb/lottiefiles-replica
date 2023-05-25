@@ -235,22 +235,22 @@
                 <div class="c-tab__shadow position-relative">
                     <div class="c-tab__scroll">
                         <div class="c-tab__head d-flex align-items-center">
-                            <div class="c-tab__head-item active">
+                            <div @click="changeTab('motion')" class="c-tab__head-item" :class="{ 'active': homeTab === 'motion'}">
                                 <label for="">
                                     Motion Design
                                 </label>
                             </div>
-                            <div class="c-tab__head-item">
+                            <div @click="changeTab('interface')" class="c-tab__head-item" :class="{ 'active': homeTab === 'interface'}">
                                 <label for="">
                                     Interface Design
                                 </label>
                             </div>
-                            <div class="c-tab__head-item">
+                            <div @click="changeTab('development')" class="c-tab__head-item" :class="{ 'active': homeTab === 'development'}">
                                 <label for="">
                                     Development
                                 </label>
                             </div>
-                            <div class="c-tab__head-item">
+                            <div @click="changeTab('marketing')" class="c-tab__head-item" :class="{ 'active': homeTab === 'marketing'}">
                                 <label for="">
                                     Marketing
                                 </label>
@@ -266,108 +266,421 @@
                     </p>
                 </div>
                 <div class="c-tab__body">
-                    <div class="row align-items-center">
-                        <div class="col-12 col-md-6">
-                            <div class="c-tab-item">
-                                <div class="c-tab-item__content">
-                                    <h3 class="c-tab-item__title">
-                                        Access thousands of free animations</h3>
-                                    <p class="c-tab-item__resume">
-                                        Explore the world’s largest pool of ready-to-use, 
-                                        free animations and express yourself in a more fun and exciting way.
-                                    </p>
+                    <div class="c-tab__body-contain" v-if="homeTab === 'motion'">
+                        <div class="row align-items-center">
+                            <div class="col-12 col-md-6">
+                                <div class="c-tab-item">
+                                    <div class="c-tab-item__content">
+                                        <h3 class="c-tab-item__title">
+                                            Access thousands of free animations</h3>
+                                        <p class="c-tab-item__resume">
+                                            Explore the world’s largest pool of ready-to-use, 
+                                            free animations and express yourself in a more fun and exciting way.
+                                        </p>
+                                    </div>
+                                    <figure class="c-tab-item__figure d-md-none">
+                                        <img class="w-100 h-100 object-fit-contain" src="@/assets/images/hero-ilus.png" alt="">
+                                    </figure>
                                 </div>
-                                <figure class="c-tab-item__figure d-md-none">
-                                    <img class="w-100 h-100 object-fit-contain" src="@/assets/images/hero-ilus.png" alt="">
-                                </figure>
+                                <div class="c-tab-item">
+                                    <div class="c-tab-item__content">
+                                        <h3 class="c-tab-item__title">
+                                            Access thousands of free animations</h3>
+                                        <p class="c-tab-item__resume">
+                                            Explore the world’s largest pool of ready-to-use, 
+                                            free animations and express yourself in a more fun and exciting way.
+                                        </p>
+                                    </div>
+                                    <figure class="c-tab-item__figure d-md-none">
+                                        <img class="w-100 h-100 object-fit-contain" src="@/assets/images/hero-ilus.png" alt="">
+                                    </figure>
+                                </div>
+                                <div class="c-tab-item">
+                                    <div class="c-tab-item__content">
+                                        <h3 class="c-tab-item__title">
+                                            Access thousands of free animations</h3>
+                                        <p class="c-tab-item__resume">
+                                            Explore the world’s largest pool of ready-to-use, 
+                                            free animations and express yourself in a more fun and exciting way.
+                                        </p>
+                                    </div>
+                                    <figure class="c-tab-item__figure d-md-none">
+                                        <img class="w-100 h-100 object-fit-contain" src="@/assets/images/hero-ilus.png" alt="">
+                                    </figure>
+                                </div>
+                                <div class="c-tab-item">
+                                    <div class="c-tab-item__content">
+                                        <h3 class="c-tab-item__title">
+                                            Access thousands of free animations</h3>
+                                        <p class="c-tab-item__resume">
+                                            Explore the world’s largest pool of ready-to-use, 
+                                            free animations and express yourself in a more fun and exciting way.
+                                        </p>
+                                    </div>
+                                    <figure class="c-tab-item__figure d-md-none">
+                                        <img class="w-100 h-100 object-fit-contain" src="@/assets/images/hero-ilus.png" alt="">
+                                    </figure>
+                                </div>
                             </div>
-                            <div class="c-tab-item">
-                                <div class="c-tab-item__content">
-                                    <h3 class="c-tab-item__title">
-                                        Access thousands of free animations</h3>
-                                    <p class="c-tab-item__resume">
-                                        Explore the world’s largest pool of ready-to-use, 
-                                        free animations and express yourself in a more fun and exciting way.
-                                    </p>
-                                </div>
-                                <figure class="c-tab-item__figure d-md-none">
-                                    <img class="w-100 h-100 object-fit-contain" src="@/assets/images/hero-ilus.png" alt="">
-                                </figure>
-                            </div>
-                            <div class="c-tab-item">
-                                <div class="c-tab-item__content">
-                                    <h3 class="c-tab-item__title">
-                                        Access thousands of free animations</h3>
-                                    <p class="c-tab-item__resume">
-                                        Explore the world’s largest pool of ready-to-use, 
-                                        free animations and express yourself in a more fun and exciting way.
-                                    </p>
-                                </div>
-                                <figure class="c-tab-item__figure d-md-none">
-                                    <img class="w-100 h-100 object-fit-contain" src="@/assets/images/hero-ilus.png" alt="">
-                                </figure>
-                            </div>
-                            <div class="c-tab-item">
-                                <div class="c-tab-item__content">
-                                    <h3 class="c-tab-item__title">
-                                        Access thousands of free animations</h3>
-                                    <p class="c-tab-item__resume">
-                                        Explore the world’s largest pool of ready-to-use, 
-                                        free animations and express yourself in a more fun and exciting way.
-                                    </p>
-                                </div>
-                                <figure class="c-tab-item__figure d-md-none">
+                            <div class="col-12 col-md-6">
+                                <figure class="c-tab-item__full-image d-none d-md-block p-3">
                                     <img class="w-100 h-100 object-fit-contain" src="@/assets/images/hero-ilus.png" alt="">
                                 </figure>
                             </div>
                         </div>
-                        <div class="col-12 col-md-6">
-                            <figure class="c-tab-item__full-image d-none d-md-block p-3">
-                                <img class="w-100 h-100 object-fit-contain" src="@/assets/images/hero-ilus.png" alt="">
-                            </figure>
+                        <div class="c-benefits__marketing d-flex align-items-center justify-content-star flex-wrap">
+                            <p class="w-100">
+                                Get started with
+                            </p>
+                            <div class="d-flex align-items-center me-4 mb-3">
+                                <figure>
+                                        <img class="w-100 h-100 object-fit-contain" src="@/assets/images/marketing/free-an.svg" alt="">
+                                </figure>
+                                <a href="">Free Animations</a>
+                            </div>
+                            <div class="d-flex align-items-center me-4 mb-3">
+                                <figure>
+                                        <img class="w-100 h-100 object-fit-contain" src="@/assets/images/marketing/lottie-ed.svg" alt="">
+                                </figure>
+                                <a href="">Lottie Editor</a>
+                            </div>
+                            <div class="d-flex align-items-center me-4 mb-3">
+                                <figure>
+                                        <img class="w-100 h-100 object-fit-contain" src="@/assets/images/marketing/wordpress.svg" alt="">
+                                </figure>
+                                <a href="">Embed on WordPress</a>
+                            </div>
+                            <div class="d-flex align-items-center me-4 mb-3">
+                                <figure>
+                                        <img class="w-100 h-100 object-fit-contain" src="@/assets/images/marketing/google.svg" alt="">
+                                </figure>
+                                <a href="">Google Workspace</a>
+                            </div>
+                            <div class="d-flex align-items-center me-4 mb-3">
+                                <figure>
+                                        <img class="w-100 h-100 object-fit-contain" src="@/assets/images/marketing/lottie-gif.svg" alt="">
+                                </figure>
+                                <a href="">Lottie to GIF</a>
+                            </div>
+                            <div class="d-flex align-items-center me-4 mb-3">
+                                <figure>
+                                        <img class="w-100 h-100 object-fit-contain" src="@/assets/images/marketing/svg-lottie.svg" alt="">
+                                </figure>
+                                <a href="">SVG to Lottie</a>
+                            </div>
                         </div>
                     </div>
-
-                </div>
-                <div class="c-benefits__marketing d-flex align-items-center justify-content-star flex-wrap">
-                    <p class="w-100">
-                        Get started with
-                    </p>
-                    <div class="d-flex align-items-center me-4 mb-3">
-                        <figure>
-                                <img class="w-100 h-100 object-fit-contain" src="@/assets/images/marketing/free-an.svg" alt="">
-                        </figure>
-                        <a href="">Free Animations</a>
+                    <div class="c-tab__body-contain" v-if="homeTab === 'interface'">
+                        <div class="row align-items-center">
+                            <div class="col-12 col-md-6">
+                                <div class="c-tab-item">
+                                    <div class="c-tab-item__content">
+                                        <h3 class="c-tab-item__title">
+                                            Access thousands of free interface</h3>
+                                        <p class="c-tab-item__resume">
+                                            Explore the world’s largest pool of ready-to-use, 
+                                            free animations and express yourself in a more fun and exciting way.
+                                        </p>
+                                    </div>
+                                    <figure class="c-tab-item__figure d-md-none">
+                                        <img class="w-100 h-100 object-fit-contain" src="@/assets/images/hero-ilus.png" alt="">
+                                    </figure>
+                                </div>
+                                <div class="c-tab-item">
+                                    <div class="c-tab-item__content">
+                                        <h3 class="c-tab-item__title">
+                                            Access thousands of free animations</h3>
+                                        <p class="c-tab-item__resume">
+                                            Explore the world’s largest pool of ready-to-use, 
+                                            free animations and express yourself in a more fun and exciting way.
+                                        </p>
+                                    </div>
+                                    <figure class="c-tab-item__figure d-md-none">
+                                        <img class="w-100 h-100 object-fit-contain" src="@/assets/images/hero-ilus.png" alt="">
+                                    </figure>
+                                </div>
+                                <div class="c-tab-item">
+                                    <div class="c-tab-item__content">
+                                        <h3 class="c-tab-item__title">
+                                            Access thousands of free animations</h3>
+                                        <p class="c-tab-item__resume">
+                                            Explore the world’s largest pool of ready-to-use, 
+                                            free animations and express yourself in a more fun and exciting way.
+                                        </p>
+                                    </div>
+                                    <figure class="c-tab-item__figure d-md-none">
+                                        <img class="w-100 h-100 object-fit-contain" src="@/assets/images/hero-ilus.png" alt="">
+                                    </figure>
+                                </div>
+                                <div class="c-tab-item">
+                                    <div class="c-tab-item__content">
+                                        <h3 class="c-tab-item__title">
+                                            Access thousands of free animations</h3>
+                                        <p class="c-tab-item__resume">
+                                            Explore the world’s largest pool of ready-to-use, 
+                                            free animations and express yourself in a more fun and exciting way.
+                                        </p>
+                                    </div>
+                                    <figure class="c-tab-item__figure d-md-none">
+                                        <img class="w-100 h-100 object-fit-contain" src="@/assets/images/hero-ilus.png" alt="">
+                                    </figure>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <figure class="c-tab-item__full-image d-none d-md-block p-3">
+                                    <img class="w-100 h-100 object-fit-contain" src="@/assets/images/hero-ilus.png" alt="">
+                                </figure>
+                            </div>
+                        </div>
+                        <div class="c-benefits__marketing d-flex align-items-center justify-content-star flex-wrap">
+                            <p class="w-100">
+                                Get started with
+                            </p>
+                            <div class="d-flex align-items-center me-4 mb-3">
+                                <figure>
+                                        <img class="w-100 h-100 object-fit-contain" src="@/assets/images/marketing/free-an.svg" alt="">
+                                </figure>
+                                <a href="">Free Animations</a>
+                            </div>
+                            <div class="d-flex align-items-center me-4 mb-3">
+                                <figure>
+                                        <img class="w-100 h-100 object-fit-contain" src="@/assets/images/marketing/lottie-ed.svg" alt="">
+                                </figure>
+                                <a href="">Lottie Editor</a>
+                            </div>
+                            <div class="d-flex align-items-center me-4 mb-3">
+                                <figure>
+                                        <img class="w-100 h-100 object-fit-contain" src="@/assets/images/marketing/wordpress.svg" alt="">
+                                </figure>
+                                <a href="">Embed on WordPress</a>
+                            </div>
+                            <div class="d-flex align-items-center me-4 mb-3">
+                                <figure>
+                                        <img class="w-100 h-100 object-fit-contain" src="@/assets/images/marketing/google.svg" alt="">
+                                </figure>
+                                <a href="">Google Workspace</a>
+                            </div>
+                            <div class="d-flex align-items-center me-4 mb-3">
+                                <figure>
+                                        <img class="w-100 h-100 object-fit-contain" src="@/assets/images/marketing/lottie-gif.svg" alt="">
+                                </figure>
+                                <a href="">Lottie to GIF</a>
+                            </div>
+                            <div class="d-flex align-items-center me-4 mb-3">
+                                <figure>
+                                        <img class="w-100 h-100 object-fit-contain" src="@/assets/images/marketing/svg-lottie.svg" alt="">
+                                </figure>
+                                <a href="">SVG to Lottie</a>
+                            </div>
+                        </div>
                     </div>
-                    <div class="d-flex align-items-center me-4 mb-3">
-                        <figure>
-                                <img class="w-100 h-100 object-fit-contain" src="@/assets/images/marketing/lottie-ed.svg" alt="">
-                        </figure>
-                        <a href="">Lottie Editor</a>
+                    <div class="c-tab__body-contain" v-if="homeTab === 'development'">
+                        <div class="row align-items-center">
+                            <div class="col-12 col-md-6">
+                                <div class="c-tab-item">
+                                    <div class="c-tab-item__content">
+                                        <h3 class="c-tab-item__title">
+                                            Access thousands of free development</h3>
+                                        <p class="c-tab-item__resume">
+                                            Explore the world’s largest pool of ready-to-use, 
+                                            free animations and express yourself in a more fun and exciting way.
+                                        </p>
+                                    </div>
+                                    <figure class="c-tab-item__figure d-md-none">
+                                        <img class="w-100 h-100 object-fit-contain" src="@/assets/images/hero-ilus.png" alt="">
+                                    </figure>
+                                </div>
+                                <div class="c-tab-item">
+                                    <div class="c-tab-item__content">
+                                        <h3 class="c-tab-item__title">
+                                            Access thousands of free animations</h3>
+                                        <p class="c-tab-item__resume">
+                                            Explore the world’s largest pool of ready-to-use, 
+                                            free animations and express yourself in a more fun and exciting way.
+                                        </p>
+                                    </div>
+                                    <figure class="c-tab-item__figure d-md-none">
+                                        <img class="w-100 h-100 object-fit-contain" src="@/assets/images/hero-ilus.png" alt="">
+                                    </figure>
+                                </div>
+                                <div class="c-tab-item">
+                                    <div class="c-tab-item__content">
+                                        <h3 class="c-tab-item__title">
+                                            Access thousands of free animations</h3>
+                                        <p class="c-tab-item__resume">
+                                            Explore the world’s largest pool of ready-to-use, 
+                                            free animations and express yourself in a more fun and exciting way.
+                                        </p>
+                                    </div>
+                                    <figure class="c-tab-item__figure d-md-none">
+                                        <img class="w-100 h-100 object-fit-contain" src="@/assets/images/hero-ilus.png" alt="">
+                                    </figure>
+                                </div>
+                                <div class="c-tab-item">
+                                    <div class="c-tab-item__content">
+                                        <h3 class="c-tab-item__title">
+                                            Access thousands of free animations</h3>
+                                        <p class="c-tab-item__resume">
+                                            Explore the world’s largest pool of ready-to-use, 
+                                            free animations and express yourself in a more fun and exciting way.
+                                        </p>
+                                    </div>
+                                    <figure class="c-tab-item__figure d-md-none">
+                                        <img class="w-100 h-100 object-fit-contain" src="@/assets/images/hero-ilus.png" alt="">
+                                    </figure>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <figure class="c-tab-item__full-image d-none d-md-block p-3">
+                                    <img class="w-100 h-100 object-fit-contain" src="@/assets/images/hero-ilus.png" alt="">
+                                </figure>
+                            </div>
+                        </div>
+                        <div class="c-benefits__marketing d-flex align-items-center justify-content-star flex-wrap">
+                            <p class="w-100">
+                                Get started with
+                            </p>
+                            <div class="d-flex align-items-center me-4 mb-3">
+                                <figure>
+                                        <img class="w-100 h-100 object-fit-contain" src="@/assets/images/marketing/free-an.svg" alt="">
+                                </figure>
+                                <a href="">Free Animations</a>
+                            </div>
+                            <div class="d-flex align-items-center me-4 mb-3">
+                                <figure>
+                                        <img class="w-100 h-100 object-fit-contain" src="@/assets/images/marketing/lottie-ed.svg" alt="">
+                                </figure>
+                                <a href="">Lottie Editor</a>
+                            </div>
+                            <div class="d-flex align-items-center me-4 mb-3">
+                                <figure>
+                                        <img class="w-100 h-100 object-fit-contain" src="@/assets/images/marketing/wordpress.svg" alt="">
+                                </figure>
+                                <a href="">Embed on WordPress</a>
+                            </div>
+                            <div class="d-flex align-items-center me-4 mb-3">
+                                <figure>
+                                        <img class="w-100 h-100 object-fit-contain" src="@/assets/images/marketing/google.svg" alt="">
+                                </figure>
+                                <a href="">Google Workspace</a>
+                            </div>
+                            <div class="d-flex align-items-center me-4 mb-3">
+                                <figure>
+                                        <img class="w-100 h-100 object-fit-contain" src="@/assets/images/marketing/lottie-gif.svg" alt="">
+                                </figure>
+                                <a href="">Lottie to GIF</a>
+                            </div>
+                            <div class="d-flex align-items-center me-4 mb-3">
+                                <figure>
+                                        <img class="w-100 h-100 object-fit-contain" src="@/assets/images/marketing/svg-lottie.svg" alt="">
+                                </figure>
+                                <a href="">SVG to Lottie</a>
+                            </div>
+                        </div>
                     </div>
-                    <div class="d-flex align-items-center me-4 mb-3">
-                        <figure>
-                                <img class="w-100 h-100 object-fit-contain" src="@/assets/images/marketing/wordpress.svg" alt="">
-                        </figure>
-                        <a href="">Embed on WordPress</a>
-                    </div>
-                    <div class="d-flex align-items-center me-4 mb-3">
-                        <figure>
-                                <img class="w-100 h-100 object-fit-contain" src="@/assets/images/marketing/google.svg" alt="">
-                        </figure>
-                        <a href="">Google Workspace</a>
-                    </div>
-                    <div class="d-flex align-items-center me-4 mb-3">
-                        <figure>
-                                <img class="w-100 h-100 object-fit-contain" src="@/assets/images/marketing/lottie-gif.svg" alt="">
-                        </figure>
-                        <a href="">Lottie to GIF</a>
-                    </div>
-                    <div class="d-flex align-items-center me-4 mb-3">
-                        <figure>
-                                <img class="w-100 h-100 object-fit-contain" src="@/assets/images/marketing/svg-lottie.svg" alt="">
-                        </figure>
-                        <a href="">SVG to Lottie</a>
+                    <div class="c-tab__body-contain" v-if="homeTab === 'marketing'">
+                        <div class="row align-items-center">
+                            <div class="col-12 col-md-6">
+                                <div class="c-tab-item">
+                                    <div class="c-tab-item__content">
+                                        <h3 class="c-tab-item__title">
+                                            Access thousands of free marketing</h3>
+                                        <p class="c-tab-item__resume">
+                                            Explore the world’s largest pool of ready-to-use, 
+                                            free animations and express yourself in a more fun and exciting way.
+                                        </p>
+                                    </div>
+                                    <figure class="c-tab-item__figure d-md-none">
+                                        <img class="w-100 h-100 object-fit-contain" src="@/assets/images/hero-ilus.png" alt="">
+                                    </figure>
+                                </div>
+                                <div class="c-tab-item">
+                                    <div class="c-tab-item__content">
+                                        <h3 class="c-tab-item__title">
+                                            Access thousands of free animations</h3>
+                                        <p class="c-tab-item__resume">
+                                            Explore the world’s largest pool of ready-to-use, 
+                                            free animations and express yourself in a more fun and exciting way.
+                                        </p>
+                                    </div>
+                                    <figure class="c-tab-item__figure d-md-none">
+                                        <img class="w-100 h-100 object-fit-contain" src="@/assets/images/hero-ilus.png" alt="">
+                                    </figure>
+                                </div>
+                                <div class="c-tab-item">
+                                    <div class="c-tab-item__content">
+                                        <h3 class="c-tab-item__title">
+                                            Access thousands of free animations</h3>
+                                        <p class="c-tab-item__resume">
+                                            Explore the world’s largest pool of ready-to-use, 
+                                            free animations and express yourself in a more fun and exciting way.
+                                        </p>
+                                    </div>
+                                    <figure class="c-tab-item__figure d-md-none">
+                                        <img class="w-100 h-100 object-fit-contain" src="@/assets/images/hero-ilus.png" alt="">
+                                    </figure>
+                                </div>
+                                <div class="c-tab-item">
+                                    <div class="c-tab-item__content">
+                                        <h3 class="c-tab-item__title">
+                                            Access thousands of free animations</h3>
+                                        <p class="c-tab-item__resume">
+                                            Explore the world’s largest pool of ready-to-use, 
+                                            free animations and express yourself in a more fun and exciting way.
+                                        </p>
+                                    </div>
+                                    <figure class="c-tab-item__figure d-md-none">
+                                        <img class="w-100 h-100 object-fit-contain" src="@/assets/images/hero-ilus.png" alt="">
+                                    </figure>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <figure class="c-tab-item__full-image d-none d-md-block p-3">
+                                    <img class="w-100 h-100 object-fit-contain" src="@/assets/images/hero-ilus.png" alt="">
+                                </figure>
+                            </div>
+                        </div>
+                        <div class="c-benefits__marketing d-flex align-items-center justify-content-star flex-wrap">
+                            <p class="w-100">
+                                Get started with
+                            </p>
+                            <div class="d-flex align-items-center me-4 mb-3">
+                                <figure>
+                                        <img class="w-100 h-100 object-fit-contain" src="@/assets/images/marketing/free-an.svg" alt="">
+                                </figure>
+                                <a href="">Free Animations</a>
+                            </div>
+                            <div class="d-flex align-items-center me-4 mb-3">
+                                <figure>
+                                        <img class="w-100 h-100 object-fit-contain" src="@/assets/images/marketing/lottie-ed.svg" alt="">
+                                </figure>
+                                <a href="">Lottie Editor</a>
+                            </div>
+                            <div class="d-flex align-items-center me-4 mb-3">
+                                <figure>
+                                        <img class="w-100 h-100 object-fit-contain" src="@/assets/images/marketing/wordpress.svg" alt="">
+                                </figure>
+                                <a href="">Embed on WordPress</a>
+                            </div>
+                            <div class="d-flex align-items-center me-4 mb-3">
+                                <figure>
+                                        <img class="w-100 h-100 object-fit-contain" src="@/assets/images/marketing/google.svg" alt="">
+                                </figure>
+                                <a href="">Google Workspace</a>
+                            </div>
+                            <div class="d-flex align-items-center me-4 mb-3">
+                                <figure>
+                                        <img class="w-100 h-100 object-fit-contain" src="@/assets/images/marketing/lottie-gif.svg" alt="">
+                                </figure>
+                                <a href="">Lottie to GIF</a>
+                            </div>
+                            <div class="d-flex align-items-center me-4 mb-3">
+                                <figure>
+                                        <img class="w-100 h-100 object-fit-contain" src="@/assets/images/marketing/svg-lottie.svg" alt="">
+                                </figure>
+                                <a href="">SVG to Lottie</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -380,6 +693,11 @@ import { mapState, mapActions } from 'vuex'
 
 export default {
     name: 'HomePage',
+    data() {
+        return {
+            homeTab: 'motion',
+        }
+    },
     props: {
         msg: String
     },
@@ -390,6 +708,9 @@ export default {
         ...mapActions(['modificarAction']),
         modi(text) {  
             this.modificarAction(text)
+        },
+        changeTab(tab) {
+            this.homeTab = tab
         }
     }
 }

@@ -310,6 +310,10 @@
 
                         &:last-child {
                             padding-right: 3rem;
+
+                            &:after {
+                                width: calc(100% - 3rem);
+                            }
                         }
 
                         &:after {
@@ -525,6 +529,10 @@
                             &:last-child {
                                 margin-right: 0;
                                 padding-right: 0;
+
+                                &::after {
+                                    width: 100%;
+                                }
                             }
                         }
                     }
