@@ -1,0 +1,21 @@
+.c-section {
+    padding-top: 64px;
+}
+
+@media(min-width: 640px) {
+    .c-section {
+        padding-top: 72px;
+    }
+}
+
+@media(min-width: 992px) {
+    .c-section {
+        padding-top: 82px;
+    }
+}
+
+@media(min-width: 1200px) {
+    .c-section {
+        padding-top: 85px;
+    }
+}

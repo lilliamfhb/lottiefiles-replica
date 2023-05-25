@@ -1,5 +1,5 @@
 <template>
-    <header class="c-header">
+    <header class="c-header position-fixed w-100">
       <div class="c-wrapper-header">
         <div class="d-flex align-items-center justify-content-between">
           <figure class="c-header__figure">

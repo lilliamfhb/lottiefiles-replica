@@ -19,6 +19,7 @@
                 font-size: 2.875rem;
                 font-family: 'averta-b';
                 margin-bottom: 1rem;
+                color: $text-strong;
 
                 span {
                     font-family: 'averta-b'; 
@@ -81,6 +82,7 @@
                 font-size: 2.25rem;
                 font-family: 'averta-b';
                 margin-bottom: 2.25rem;
+                color: $text-strong;
             }
 
             &__resume {
@@ -179,6 +181,7 @@
                 font-size: 2.25rem;
                 font-family: 'averta-b';
                 margin-bottom: 2.25rem;
+                color: $text-strong;
             }
 
             &__resume {
@@ -246,6 +249,153 @@
                     svg {
                         font-family: 'averta-b';
                     }
+                }
+            }
+        }
+
+        .c-benefits {
+            background: $soft-gray;
+            padding: 4rem 1.25rem;
+
+            &__title {
+                font-size: 2.25rem;
+                margin-bottom: 1rem;
+                font-family: 'averta-b';
+                color: $text-strong;
+            }
+
+            &__resume {
+                font-size: 1.25rem;
+                color: $secondary-color;
+                margin-bottom: 2.5rem;
+            }
+
+            
+            .c-tab {
+                &__shadow {
+                    margin-right: -1rem;
+
+                    &::after {
+                        content: "";
+                        background: linear-gradient(90deg,transparent,#f6f8f9);
+                        height: 100%;
+                        position: absolute;
+                        right: 0;
+                        top: 0;
+                        width: 20%;
+                        z-index: 100;
+                    }
+                }
+
+                &__scroll {
+                    overflow: hidden;
+                    overflow-x: scroll;
+                    position: relative;
+
+                    &::-webkit-scrollbar {
+                        display: none;
+                    }
+                }
+
+                &__head {
+                    margin-bottom: 0.5rem;
+
+                    &-item {
+                        font-size: 1.25rem;
+                        color: $gray-strong;
+                        margin-right: 2rem;
+                        padding: 0 0 1rem;
+                        white-space: nowrap;
+                        position: relative;
+
+                        &:last-child {
+                            padding-right: 3rem;
+                        }
+
+                        &:after {
+                            content: "";
+                            position: absolute;
+                            bottom: 0;
+                            left: 0;
+                            width: 100%;
+                            height: 1rem;
+                            background: transparent url('./../images/selected_tab.svg') no-repeat top / contain;
+                            opacity: 0;
+                        }
+
+                        &.active {
+                            label {
+                                font-family: 'averta-b';
+                            }
+
+                            &::after {
+                                opacity: 1;
+                            }
+                        }
+                    }
+                }
+
+                &__body {
+                    .c-tab-item {
+                        padding: 1.25rem 0;
+
+                        &__content {
+                            padding-left: 1.25rem;
+                            position: relative;
+
+                            &::before {
+                                content: "";
+                                position: absolute;
+                                top: 0;
+                                left: 0;
+                                height: 100%;
+                                width: 2px;
+                                background: rgba($dark,0.25);
+                            }
+                        }
+                        &__title {
+                            font-size: 1rem;
+                            color: $text-strong;
+                            font-family: 'averta-b';
+                        }
+
+                        &__resume {
+                            font-size: 0.875rem;
+                            color: $secondary-color;
+                        }
+
+                        &__figure {
+                            overflow: hidden;
+                            max-height: 0;
+                        }
+
+                        &.active {
+                            .c-tab-item {
+                                &__figure {
+                                    max-height: 1000px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            &__marketing {
+                font-size: 0.875rem;
+
+                p {
+                    margin-bottom: 1.125rem;
+                }
+
+                figure {
+                    height: 30px;
+                    width: 30px;
+                }
+
+                a {
+                    font-size: 0.875rem;
+                    font-family: 'averta-b';
+                    padding-left: 0.5rem;
                 }
             }
         }
@@ -321,6 +471,10 @@
             .c-creations {
                 padding: 4rem 1rem  1rem;
 
+                &__title {
+                    font-size: 2.875rem;
+                }
+
                 &__resume {
                     font-size: 1.25rem;
                 } 
@@ -329,6 +483,14 @@
                     padding-top: 50px;
                 }
             }
+
+            .c-benefits {
+                &__title {
+                    font-size: 2.875rem;
+                }
+            }
+
+
         }
     }
 }
@@ -345,6 +507,48 @@
 
                 &__ilustration {
                     padding-left: 2rem;
+                }
+            }
+
+            .c-benefits {
+                &__resume{
+                    max-width: 75%;
+                    margin: 0 auto 2.25rem;
+                }
+                .c-tab {
+                    &__head {
+                        justify-content: center;
+
+                        &-item {
+                            font-size: 1.5rem;
+
+                            &:last-child {
+                                margin-right: 0;
+                                padding-right: 0;
+                            }
+                        }
+                    }
+
+                    &__body {
+                        .c-tab-item {
+                            padding: 0;
+                            margin-bottom: 3rem;
+
+                            &__title {
+                                font-size: 1.25rem;
+                            }
+
+                            &__resume {
+                                font-size: 1rem;
+                            }
+                        }
+                    }
+
+                    &__shadow {
+                        &:after {
+                            display: none;
+                        }
+                    }
                 }
             }
         }
