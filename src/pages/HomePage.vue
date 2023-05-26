@@ -236,22 +236,22 @@
                     <div class="c-tab__scroll">
                         <div class="c-tab__head d-flex align-items-center">
                             <div @click="changeTab('motion')" class="c-tab__head-item" :class="{ 'active': homeTab === 'motion'}">
-                                <label for="">
+                                <label >
                                     Motion Design
                                 </label>
                             </div>
                             <div @click="changeTab('interface')" class="c-tab__head-item" :class="{ 'active': homeTab === 'interface'}">
-                                <label for="">
+                                <label >
                                     Interface Design
                                 </label>
                             </div>
                             <div @click="changeTab('development')" class="c-tab__head-item" :class="{ 'active': homeTab === 'development'}">
-                                <label for="">
+                                <label >
                                     Development
                                 </label>
                             </div>
                             <div @click="changeTab('marketing')" class="c-tab__head-item" :class="{ 'active': homeTab === 'marketing'}">
-                                <label for="">
+                                <label >
                                     Marketing
                                 </label>
                             </div>
@@ -269,56 +269,17 @@
                     <div class="c-tab__body-contain" v-if="homeTab === 'motion'">
                         <div class="row align-items-center">
                             <div class="col-12 col-md-6">
-                                <div class="c-tab-item">
+                                <div v-for="(block, id) of bodyTabs.one" :key="`block-${id}`" class="c-tab-item" :class="{'active': block.active}" @click="handleActive(id, 'one')">
                                     <div class="c-tab-item__content">
                                         <h3 class="c-tab-item__title">
-                                            Access thousands of free animations</h3>
+                                            {{block.title}}
+                                        </h3>
                                         <p class="c-tab-item__resume">
-                                            Explore the world’s largest pool of ready-to-use, 
-                                            free animations and express yourself in a more fun and exciting way.
+                                            {{block.resume}}
                                         </p>
                                     </div>
                                     <figure class="c-tab-item__figure d-md-none">
-                                        <img class="w-100 h-100 object-fit-contain" src="@/assets/images/hero-ilus.png" alt="">
-                                    </figure>
-                                </div>
-                                <div class="c-tab-item">
-                                    <div class="c-tab-item__content">
-                                        <h3 class="c-tab-item__title">
-                                            Access thousands of free animations</h3>
-                                        <p class="c-tab-item__resume">
-                                            Explore the world’s largest pool of ready-to-use, 
-                                            free animations and express yourself in a more fun and exciting way.
-                                        </p>
-                                    </div>
-                                    <figure class="c-tab-item__figure d-md-none">
-                                        <img class="w-100 h-100 object-fit-contain" src="@/assets/images/hero-ilus.png" alt="">
-                                    </figure>
-                                </div>
-                                <div class="c-tab-item">
-                                    <div class="c-tab-item__content">
-                                        <h3 class="c-tab-item__title">
-                                            Access thousands of free animations</h3>
-                                        <p class="c-tab-item__resume">
-                                            Explore the world’s largest pool of ready-to-use, 
-                                            free animations and express yourself in a more fun and exciting way.
-                                        </p>
-                                    </div>
-                                    <figure class="c-tab-item__figure d-md-none">
-                                        <img class="w-100 h-100 object-fit-contain" src="@/assets/images/hero-ilus.png" alt="">
-                                    </figure>
-                                </div>
-                                <div class="c-tab-item">
-                                    <div class="c-tab-item__content">
-                                        <h3 class="c-tab-item__title">
-                                            Access thousands of free animations</h3>
-                                        <p class="c-tab-item__resume">
-                                            Explore the world’s largest pool of ready-to-use, 
-                                            free animations and express yourself in a more fun and exciting way.
-                                        </p>
-                                    </div>
-                                    <figure class="c-tab-item__figure d-md-none">
-                                        <img class="w-100 h-100 object-fit-contain" src="@/assets/images/hero-ilus.png" alt="">
+                                        <img class="w-100 h-100 object-fit-contain" :src="require(`@/assets/images/${block.image}`)" alt="">
                                     </figure>
                                 </div>
                             </div>
@@ -373,56 +334,17 @@
                     <div class="c-tab__body-contain" v-if="homeTab === 'interface'">
                         <div class="row align-items-center">
                             <div class="col-12 col-md-6">
-                                <div class="c-tab-item">
+                                <div v-for="(block, id) of bodyTabs.two" :key="`block-${id}`" class="c-tab-item" :class="{'active': block.active}" @click="handleActive(id, 'two')">
                                     <div class="c-tab-item__content">
                                         <h3 class="c-tab-item__title">
-                                            Access thousands of free interface</h3>
+                                            {{block.title}}
+                                        </h3>
                                         <p class="c-tab-item__resume">
-                                            Explore the world’s largest pool of ready-to-use, 
-                                            free animations and express yourself in a more fun and exciting way.
+                                            {{block.resume}}
                                         </p>
                                     </div>
                                     <figure class="c-tab-item__figure d-md-none">
-                                        <img class="w-100 h-100 object-fit-contain" src="@/assets/images/hero-ilus.png" alt="">
-                                    </figure>
-                                </div>
-                                <div class="c-tab-item">
-                                    <div class="c-tab-item__content">
-                                        <h3 class="c-tab-item__title">
-                                            Access thousands of free animations</h3>
-                                        <p class="c-tab-item__resume">
-                                            Explore the world’s largest pool of ready-to-use, 
-                                            free animations and express yourself in a more fun and exciting way.
-                                        </p>
-                                    </div>
-                                    <figure class="c-tab-item__figure d-md-none">
-                                        <img class="w-100 h-100 object-fit-contain" src="@/assets/images/hero-ilus.png" alt="">
-                                    </figure>
-                                </div>
-                                <div class="c-tab-item">
-                                    <div class="c-tab-item__content">
-                                        <h3 class="c-tab-item__title">
-                                            Access thousands of free animations</h3>
-                                        <p class="c-tab-item__resume">
-                                            Explore the world’s largest pool of ready-to-use, 
-                                            free animations and express yourself in a more fun and exciting way.
-                                        </p>
-                                    </div>
-                                    <figure class="c-tab-item__figure d-md-none">
-                                        <img class="w-100 h-100 object-fit-contain" src="@/assets/images/hero-ilus.png" alt="">
-                                    </figure>
-                                </div>
-                                <div class="c-tab-item">
-                                    <div class="c-tab-item__content">
-                                        <h3 class="c-tab-item__title">
-                                            Access thousands of free animations</h3>
-                                        <p class="c-tab-item__resume">
-                                            Explore the world’s largest pool of ready-to-use, 
-                                            free animations and express yourself in a more fun and exciting way.
-                                        </p>
-                                    </div>
-                                    <figure class="c-tab-item__figure d-md-none">
-                                        <img class="w-100 h-100 object-fit-contain" src="@/assets/images/hero-ilus.png" alt="">
+                                        <img class="w-100 h-100 object-fit-contain" :src="require(`@/assets/images/${block.image}`)" alt="">
                                     </figure>
                                 </div>
                             </div>
@@ -477,56 +399,17 @@
                     <div class="c-tab__body-contain" v-if="homeTab === 'development'">
                         <div class="row align-items-center">
                             <div class="col-12 col-md-6">
-                                <div class="c-tab-item">
+                                <div v-for="(block, id) of bodyTabs.three" :key="`block-${id}`" class="c-tab-item" :class="{'active': block.active}" @click="handleActive(id, 'three')">
                                     <div class="c-tab-item__content">
                                         <h3 class="c-tab-item__title">
-                                            Access thousands of free development</h3>
+                                            {{block.title}}
+                                        </h3>
                                         <p class="c-tab-item__resume">
-                                            Explore the world’s largest pool of ready-to-use, 
-                                            free animations and express yourself in a more fun and exciting way.
+                                            {{block.resume}}
                                         </p>
                                     </div>
                                     <figure class="c-tab-item__figure d-md-none">
-                                        <img class="w-100 h-100 object-fit-contain" src="@/assets/images/hero-ilus.png" alt="">
-                                    </figure>
-                                </div>
-                                <div class="c-tab-item">
-                                    <div class="c-tab-item__content">
-                                        <h3 class="c-tab-item__title">
-                                            Access thousands of free animations</h3>
-                                        <p class="c-tab-item__resume">
-                                            Explore the world’s largest pool of ready-to-use, 
-                                            free animations and express yourself in a more fun and exciting way.
-                                        </p>
-                                    </div>
-                                    <figure class="c-tab-item__figure d-md-none">
-                                        <img class="w-100 h-100 object-fit-contain" src="@/assets/images/hero-ilus.png" alt="">
-                                    </figure>
-                                </div>
-                                <div class="c-tab-item">
-                                    <div class="c-tab-item__content">
-                                        <h3 class="c-tab-item__title">
-                                            Access thousands of free animations</h3>
-                                        <p class="c-tab-item__resume">
-                                            Explore the world’s largest pool of ready-to-use, 
-                                            free animations and express yourself in a more fun and exciting way.
-                                        </p>
-                                    </div>
-                                    <figure class="c-tab-item__figure d-md-none">
-                                        <img class="w-100 h-100 object-fit-contain" src="@/assets/images/hero-ilus.png" alt="">
-                                    </figure>
-                                </div>
-                                <div class="c-tab-item">
-                                    <div class="c-tab-item__content">
-                                        <h3 class="c-tab-item__title">
-                                            Access thousands of free animations</h3>
-                                        <p class="c-tab-item__resume">
-                                            Explore the world’s largest pool of ready-to-use, 
-                                            free animations and express yourself in a more fun and exciting way.
-                                        </p>
-                                    </div>
-                                    <figure class="c-tab-item__figure d-md-none">
-                                        <img class="w-100 h-100 object-fit-contain" src="@/assets/images/hero-ilus.png" alt="">
+                                        <img class="w-100 h-100 object-fit-contain" :src="require(`@/assets/images/${block.image}`)" alt="">
                                     </figure>
                                 </div>
                             </div>
@@ -581,56 +464,23 @@
                     <div class="c-tab__body-contain" v-if="homeTab === 'marketing'">
                         <div class="row align-items-center">
                             <div class="col-12 col-md-6">
-                                <div class="c-tab-item">
+                                <div 
+                                    v-for="(block, id) of bodyTabs.four" 
+                                    :key="`block-${id}`" 
+                                    class="c-tab-item" 
+                                    :class="{'active': block.active}" 
+                                    @click="handleActive(id, 'four')">
+
                                     <div class="c-tab-item__content">
                                         <h3 class="c-tab-item__title">
-                                            Access thousands of free marketing</h3>
+                                            {{block.title}}
+                                        </h3>
                                         <p class="c-tab-item__resume">
-                                            Explore the world’s largest pool of ready-to-use, 
-                                            free animations and express yourself in a more fun and exciting way.
+                                            {{block.resume}}
                                         </p>
                                     </div>
                                     <figure class="c-tab-item__figure d-md-none">
-                                        <img class="w-100 h-100 object-fit-contain" src="@/assets/images/hero-ilus.png" alt="">
-                                    </figure>
-                                </div>
-                                <div class="c-tab-item">
-                                    <div class="c-tab-item__content">
-                                        <h3 class="c-tab-item__title">
-                                            Access thousands of free animations</h3>
-                                        <p class="c-tab-item__resume">
-                                            Explore the world’s largest pool of ready-to-use, 
-                                            free animations and express yourself in a more fun and exciting way.
-                                        </p>
-                                    </div>
-                                    <figure class="c-tab-item__figure d-md-none">
-                                        <img class="w-100 h-100 object-fit-contain" src="@/assets/images/hero-ilus.png" alt="">
-                                    </figure>
-                                </div>
-                                <div class="c-tab-item">
-                                    <div class="c-tab-item__content">
-                                        <h3 class="c-tab-item__title">
-                                            Access thousands of free animations</h3>
-                                        <p class="c-tab-item__resume">
-                                            Explore the world’s largest pool of ready-to-use, 
-                                            free animations and express yourself in a more fun and exciting way.
-                                        </p>
-                                    </div>
-                                    <figure class="c-tab-item__figure d-md-none">
-                                        <img class="w-100 h-100 object-fit-contain" src="@/assets/images/hero-ilus.png" alt="">
-                                    </figure>
-                                </div>
-                                <div class="c-tab-item">
-                                    <div class="c-tab-item__content">
-                                        <h3 class="c-tab-item__title">
-                                            Access thousands of free animations</h3>
-                                        <p class="c-tab-item__resume">
-                                            Explore the world’s largest pool of ready-to-use, 
-                                            free animations and express yourself in a more fun and exciting way.
-                                        </p>
-                                    </div>
-                                    <figure class="c-tab-item__figure d-md-none">
-                                        <img class="w-100 h-100 object-fit-contain" src="@/assets/images/hero-ilus.png" alt="">
+                                        <img class="w-100 h-100 object-fit-contain" :src="require(`@/assets/images/${block.image}`)" alt="">
                                     </figure>
                                 </div>
                             </div>
@@ -696,6 +546,112 @@ export default {
     data() {
         return {
             homeTab: 'motion',
+            bodyTabs: {
+                one : [
+                    {
+                        title: 'Access thousands of free motion 1 1',
+                        resume: 'Explore the world’s largest pool of ready-to-use, free animations and express yourself in a more fun and exciting way.',
+                        image: 'hero-ilus.png',
+                        active: true,
+                    },
+                    {
+                        title: 'Access thousands of free motion 1 2',
+                        resume: 'Explore the world’s largest pool of ready-to-use, free animations and express yourself in a more fun and exciting way.',
+                        image: 'hero-ilus.png',
+                        active: false,
+                    },
+                    {
+                        title: 'Access thousands of free motion 1 3',
+                        resume: 'Explore the world’s largest pool of ready-to-use, free animations and express yourself in a more fun and exciting way.',
+                        image: 'hero-ilus.png',
+                        active: false,
+                    },
+                                        {
+                        title: 'Access thousands of free motion 1 4',
+                        resume: 'Explore the world’s largest pool of ready-to-use, free animations and express yourself in a more fun and exciting way.',
+                        image: 'hero-ilus.png',
+                        active: false,
+                    },
+                ],
+                two : [
+                    {
+                        title: 'Access thousands of free Interface 2 1',
+                        resume: 'Explore the world’s largest pool of ready-to-use, free animations and express yourself in a more fun and exciting way.',
+                        image: 'hero-ilus.png',
+                        active: true,
+                    },
+                    {
+                        title: 'Access thousands of free Interface 2 2',
+                        resume: 'Explore the world’s largest pool of ready-to-use, free animations and express yourself in a more fun and exciting way.',
+                        image: 'hero-ilus.png',
+                        active: false,
+                    },
+                    {
+                        title: 'Access thousands of free Interface 2 3',
+                        resume: 'Explore the world’s largest pool of ready-to-use, free animations and express yourself in a more fun and exciting way.',
+                        image: 'hero-ilus.png',
+                        active: false,
+                    },
+                    {
+                        title: 'Access thousands of free Interface 2 4',
+                        resume: 'Explore the world’s largest pool of ready-to-use, free animations and express yourself in a more fun and exciting way.',
+                        image: 'hero-ilus.png',
+                        active: false,
+                    },
+                ],
+                three : [
+                    {
+                        title: 'Access thousands of free Development 3 1',
+                        resume: 'Explore the world’s largest pool of ready-to-use, free animations and express yourself in a more fun and exciting way.',
+                        image: 'hero-ilus.png',
+                        active: true,
+                    },
+                    {
+                        title: 'Access thousands of free Development 3 2',
+                        resume: 'Explore the world’s largest pool of ready-to-use, free animations and express yourself in a more fun and exciting way.',
+                        image: 'hero-ilus.png',
+                        active: false,
+                    },
+                    {
+                        title: 'Access thousands of free Development 3 3',
+                        resume: 'Explore the world’s largest pool of ready-to-use, free animations and express yourself in a more fun and exciting way.',
+                        image: 'hero-ilus.png',
+                        active: false,
+                    },
+                                        {
+                        title: 'Access thousands of free Development 3 4',
+                        resume: 'Explore the world’s largest pool of ready-to-use, free animations and express yourself in a more fun and exciting way.',
+                        image: 'hero-ilus.png',
+                        active: false,
+                    },
+                ],
+                four : [
+                    {
+                        title: 'Access thousands of free Marketing 4 1',
+                        resume: 'Explore the world’s largest pool of ready-to-use, free animations and express yourself in a more fun and exciting way.',
+                        image: 'hero-ilus.png',
+                        active: true,
+                    },
+                    {
+                        title: 'Access thousands of free Marketing 4 2',
+                        resume: 'Explore the world’s largest pool of ready-to-use, free animations and express yourself in a more fun and exciting way.',
+                        image: 'hero-ilus.png',
+                        active: false,
+                    },
+                    {
+                        title: 'Access thousands of free Marketing 4 3',
+                        resume: 'Explore the world’s largest pool of ready-to-use, free animations and express yourself in a more fun and exciting way.',
+                        image: 'hero-ilus.png',
+                        active: false,
+                    },
+                    {
+                        title: 'Access thousands of free Marketing 4 4',
+                        resume: 'Explore the world’s largest pool of ready-to-use, free animations and express yourself in a more fun and exciting way.',
+                        image: 'hero-ilus.png',
+                        active: false,
+                    },
+                ]
+            }
         }
     },
     props: {
@@ -711,6 +667,19 @@ export default {
         },
         changeTab(tab) {
             this.homeTab = tab
+        },
+        handleActive(blockId, bodyTabBlock) {
+            const selectedBlock = this.bodyTabs[bodyTabBlock][blockId]
+
+            if(!selectedBlock.active) {
+                this.bodyTabs[bodyTabBlock].forEach((block) => {
+                    block.active = false;
+                })
+
+                setTimeout(()=> {
+                    selectedBlock.active = true;
+                },500)
+            }
         }
     }
 }

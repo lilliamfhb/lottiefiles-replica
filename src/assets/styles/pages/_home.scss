@@ -371,12 +371,13 @@
                         &__figure {
                             overflow: hidden;
                             max-height: 0;
+                            transition: all 0.5s;
                         }
 
                         &.active {
                             .c-tab-item {
                                 &__figure {
-                                    max-height: 1000px;
+                                    max-height: 500px;
                                 }
                             }
                         }
