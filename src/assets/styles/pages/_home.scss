@@ -404,6 +404,85 @@
                 }
             }
         }
+
+        .c-motion {
+            background: $soft-gray;
+            padding: 0 1.25rem;
+
+            .c-wrapper {
+                position: relative;
+                z-index: 5;
+            }
+
+            &__title {
+                font-size: 2.25rem;
+                font-family: 'averta-b';
+                margin-bottom: 0;
+                color: $text-strong;
+            }
+
+            &__bg {
+                width: 100%;
+                height: 100%;
+                overflow: hidden;
+
+                img {
+                    position: absolute;
+                    left: 50%; // respoecto a la poscion del contenedor
+                    transform: translate(-50%, 0px); // se mueve en relacion a la posicion del elemnto
+                }
+            }
+
+            &__content {
+                padding: 3rem;
+                max-width: 640px;
+                margin: 0 auto;
+            }
+
+            &__item {
+                margin-bottom: 2rem;
+            }
+
+            &__subtitle {
+                margin-bottom: 1.75rem;
+            }
+        }
+
+        .c-after {
+            background: $soft-gray;
+            padding: 2rem 1.25rem;
+
+            &__figure {
+                margin-bottom: 2rem;
+
+                img {
+                    border-radius: 0.75rem;
+                }
+            }
+
+            &__icons {
+                width: 33.3%;
+                margin-bottom: 1.25rem;
+            }
+
+            &__title {
+                font-size: 2.25rem;
+                font-family: 'averta-b';
+                margin-bottom: 1rem;
+                color: $text-strong;
+            }
+
+            &__resume {
+                font-size: 1.25rem;
+                color: $secondary-color;
+                margin-bottom: 2.5rem;
+                max-width: 40rem;
+            }
+
+            .c-button {
+                padding: 1rem 2rem;
+            }
+        }
     }
 }
 
@@ -495,7 +574,35 @@
                 }
             }
 
+            .c-motion {
+                &__title {
+                    font-size: 2.875rem;
+                }
+            }
 
+            .c-after {
+                &__title {
+                    font-size: 2.875rem;
+                }
+
+                &__resume{
+                    font-size: 1.25rem;
+                }
+
+                .c-button {
+                    padding: 1.25rem 4rem;
+                    border-radius: 1rem;
+                    font-size: 1.125rem;
+                }
+
+                &__figure {
+                    margin: 0 2rem 0 0;
+                }
+
+                &__content {
+                    padding-left: 2rem;
+                }
+            }
         }
     }
 }
@@ -559,6 +666,31 @@
                         }
                     }
                 }
+            }
+
+            .c-motion {
+                padding: 0;
+
+                &__title {
+                    padding: 2.5rem 0;
+                }
+
+                &__content {
+                    padding: 0;
+                    max-width: 100%;
+                }
+
+                &__item {
+                    margin: 2.5rem 0.5rem 0;
+                }
+                
+                .pd-desktop {
+                    padding: 2.25rem 0;
+                }
+            }
+
+            .c-after {
+                padding: 4rem 0;
             }
         }
     }

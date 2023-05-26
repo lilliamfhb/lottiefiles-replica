@@ -535,6 +535,93 @@
                 </div>
             </div>
         </div>
+        <div class="c-motion">
+            <div class="c-wrapper">
+                <h2 class="c-motion__title text-center">Motion design made easy</h2>
+            </div>
+            <div class="position-relative ">
+                <div class="c-motion__bg position-absolute w-100 d-none d-md-block">
+                    <img src="@/assets/images/worm.svg" alt="">
+                </div>
+                <div class="c-wrapper">
+                    <div class="pd-desktop">
+                        <figure class="c-motion__figure d-none d-md-block">
+                            <img class="w-100" src="@/assets/images/motion.png" alt="">
+                        </figure>
+                        <div class="c-motion__content">
+                            <div class="row">
+                                <div class="col-12 col-md-3">
+                                    <div class="c-motion__item">
+                                        <figure class="c-motion__subtitle">
+                                            <img class="w-100" src="@/assets/images/motion-1.png" alt="">
+                                        </figure>
+                                        <figure class="c-motion__image d-md-none">
+                                            <img class="w-100" src="@/assets/images/motion-figure-1.png" alt="">
+                                        </figure>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-3">
+                                    <div class="c-motion__item">
+                                        <figure class="c-motion__subtitle">
+                                            <img class="w-100" src="@/assets/images/motion-2.png" alt="">
+                                        </figure>
+                                        <figure class="c-motion__image d-md-none">
+                                            <img class="w-100" src="@/assets/images/motion-figure-2.png" alt="">
+                                        </figure>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-3">
+                                    <div class="c-motion__item">
+                                        <figure class="c-motion__subtitle">
+                                            <img class="w-100" src="@/assets/images/motion-3.png" alt="">
+                                        </figure>
+                                        <figure class="c-motion__image d-md-none">
+                                            <img class="w-100" src="@/assets/images/motion-figure-3.png" alt="">
+                                        </figure>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-3">
+                                    <div class="c-motion__item">
+                                        <figure class="c-motion__subtitle">
+                                            <img class="w-100" src="@/assets/images/motion-4.png" alt="">
+                                        </figure>
+                                        <figure class="c-motion__image d-md-none">
+                                            <img class="w-100" src="@/assets/images/motion-figure-4.png" alt="">
+                                        </figure>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="c-after">
+            <div class="c-wrapper">
+                <div class="row align-items-center">
+                    <div class="col-12 col-sm-6">
+                        <figure class="c-after__figure">
+                            <img class="w-100" src="@/assets/images/after.png" alt="">
+                        </figure>
+                    </div>
+                    <div class="col-12 col-sm-6">
+                        <div class="c-after__content text-center text-sm-start">
+                            <div class="c-after__icons">
+                                <img class="w-100" src="@/assets/images/lottie-plus-ae.png" alt="">
+                            </div>
+                            <h2 class="c-after__title">
+                                Create Lottie animations with our After Effects plugin
+                            </h2>
+                            <p class="c-after__resume">
+                                Create Lottie animations, test them across devices 
+                                in real-time and optimize them for the best performance.
+                            </p>
+                            <a href="" class="c-button c-button--primary">Learn more</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 </template>
 
