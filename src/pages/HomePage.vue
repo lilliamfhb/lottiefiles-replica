@@ -708,7 +708,7 @@
                         </p>
                     </div>
                     <div class="col-12 col-md-7">
-                        <ul class="c-tools__list d-flex justify-content-start align-items-center flex-wrap">
+                        <ul class="c-tools__list d-flex justify-content-center justify-content-lg-start align-items-center flex-wrap">
                             <li>
                                 <a>
                                     <img src="@/assets/images/tools/ae.svg" alt="">
@@ -830,6 +830,71 @@
                                 </a> 
                             </li>
                         </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="c-apps">
+            <div class="c-wrapper position-relative">
+                <div class="c-apps__bg position-absolute w-100">
+                </div>
+            </div>
+            <div class="c-wrapper position-relative">
+                <div class="c-apps__content">
+                    <h2 class="c-apps__title text-center">
+                        The world's top websites and apps use Lottie
+                    </h2>
+                    <p class="c-apps__resume text-center">
+                        Read user stories from the individuals and teams that use Lottie to boost conversions and engage users with powerful motion design experiences.
+                    </p>
+                </div>
+                <div class="c-apps__board">
+                    <div class="row gy-4">
+                        <div class="col-12 col-sm-4">
+                            <div class="c-app-card  c-app-card--disney">
+                                <div class="c-app-card__top">
+                                    <img class="w-100" src="@/assets/images/disney.svg" alt="">
+                                </div>
+                                <div class="c-app-card__bottom">
+                                    <p class="c-app-card__resume">
+                                        "By leveraging Lottie animations, we can provide a whole experience."
+                                    </p>
+                                    <a href=""  class="c-link c-link--white">
+                                        View showcase <Icon icon="ph:arrow-right-light" />
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-4">
+                            <div class="c-app-card c-app-card--duolingo">
+                                <div class="c-app-card__top">
+                                    <img class="w-100" src="@/assets/images/duolingo.svg" alt="">
+                                </div>
+                                <div class="c-app-card__bottom">
+                                    <p class="c-app-card__resume">
+                                        "Motion helps drive the message; it can tell a longer story with more emotion."
+                                    </p>
+                                    <a href=""  class="c-link c-link--white">
+                                        View showcase <Icon icon="ph:arrow-right-light" />
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-4">
+                            <div class="c-app-card c-app-card--cart">
+                                <div class="c-app-card__top">
+                                    <img class="w-100" src="@/assets/images/cart.svg" alt="">
+                                </div>
+                                <div class="c-app-card__bottom">
+                                    <p class="c-app-card__resume">
+                                        "Lottie animations help us keep users engaged, delighted, and always learning."
+                                    </p>
+                                    <a href="" class="c-link c-link--white">
+                                        View showcase <Icon icon="ph:arrow-right-light" />
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
