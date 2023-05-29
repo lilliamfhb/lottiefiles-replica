@@ -483,6 +483,132 @@
                 padding: 1rem 2rem;
             }
         }
+
+        .c-platform {
+            background: $soft-gray;
+            padding: 3rem 1.25rem;
+
+            &__title {
+                font-size: 2.25rem;
+                font-family: 'averta-b';
+                margin-bottom: 1rem;
+                color: $text-strong;
+            }
+
+            &__resume {
+                font-size: 1.25rem;
+                color: $secondary-color;
+                margin-bottom: 2.5rem;
+                max-width: 40rem;
+            }
+
+            .c-button {
+                padding: 1rem 2rem;
+                font-size: 1rem;
+            }
+
+            .c-board-card {
+                border-radius: 1rem;
+                overflow: hidden;
+                padding-bottom: 1rem;
+
+                &__title {
+                    font-size: 1.25rem;
+                    font-family: 'averta-b';
+                    color: $text-strong;
+                    margin-bottom: 1rem;
+                    padding: 1rem;
+                }
+
+                &__resume {
+                    padding: 0 1.25rem;
+                    color: $color-bg-text;
+                }
+
+                &--green {
+                    background: $leaf;
+                }
+
+                &--blue { 
+                    background: $bluey;
+                }
+
+                &--pink {
+                    background: $pink;
+
+                    .c-board-card {
+                        &__video {
+                            padding: 0 1.5rem 2rem;
+
+                            video {
+                                border-radius: 1rem;
+                            }
+                        }
+                    }
+                }
+
+                &--yellow {
+                    background: $yellow;
+
+                    .c-board-card {
+                        &__video {
+                            padding: 0 2rem 0 0;
+                        }
+                    }
+                }
+            }
+        }
+
+        .c-tools {
+            background: $soft-gray;
+            padding: 2rem 1.25rem;
+
+            &__title {
+                font-size: 2.25rem;
+                font-family: 'averta-b';
+                margin-bottom: 1rem;
+                color: $text-strong;
+            }
+
+            &__resume {
+                font-size: 1.25rem;
+                color: $secondary-color;
+                margin-bottom: 2.5rem;
+                max-width: 40rem;
+            }
+
+            &__list {
+                gap: 10px;
+                vertical-align: middle;
+
+
+                li {
+                    background: $clear-gray;
+                    border-radius: 0.75rem;
+                    width: 111px;
+                    height: 111px;
+                    text-align: center;
+                    padding: 1.5rem 0.5rem;
+
+                    a {
+                        display: inline-block;
+                        height: 100%;
+                    }
+
+                    img {
+                        height: 40px;
+                    }
+
+                    p {
+                        margin: 0;
+                        color: $secondary-color;
+                        font-size: 0.75rem;
+                        line-height: 0.80rem;
+                        margin-top: 0.5rem;
+                    }
+                }
+            }
+        }
     }
 }
 
@@ -603,6 +729,68 @@
                     padding-left: 2rem;
                 }
             }
+
+            .c-platform {
+                &__title {
+                    font-size: 2.875rem;
+                }
+
+                &__resume{
+                    font-size: 1.25rem;
+                    margin-bottom: 3.5rem;
+                }
+
+                &__figure {
+                    width: 300px;
+                    height: 300px;
+                }
+
+                .c-button {
+                    padding: 1.25rem 4rem;
+                    border-radius: 1rem;
+                    font-size: 1.125rem;
+                }
+
+                .c-board-card {
+                    height: 100%;
+                    max-height: 500px;
+                    display: flex;
+                    flex-direction: column;
+                    padding: 0;
+
+                    &__title,
+                    &__resume {
+                        flex-grow: 1;
+                    }
+
+                    &__title {
+                        padding-top: 1.25rem;
+                    }
+
+                    &__resume {
+                        font-size: 1.125rem;
+                        margin-bottom: 1.5rem;
+                    }
+
+                    &__video {
+                        flex-grow: 99999999;
+                        
+                        video {
+                            object-fit: cover;
+                        }
+                    }
+                }
+            }
+
+            .c-tools {
+                &__title{
+                    font-size: 2.875rem;
+                }
+
+                &__resume {
+                    font-size: 1.25rem;
+                }
+            }
         }
     }
 }
@@ -690,6 +878,32 @@
             }
 
             .c-after {
+                padding: 4rem 0;
+            }
+
+            .c-platform {
+                padding: 5rem 0;
+
+                &__bg {
+                    right: 0;
+                    top: 0;
+                    text-align: right;
+
+                    img {
+                        min-width: 750px;
+                    }
+                }
+
+                &__board {
+                    margin-top: 2.5rem;
+                }
+
+                .c-button {
+                    margin-top: 3.5rem;
+                }
+            }
+
+            .c-tools{ 
                 padding: 4rem 0;
             }
         }

@@ -606,7 +606,7 @@
                     </div>
                     <div class="col-12 col-sm-6">
                         <div class="c-after__content text-center text-sm-start">
-                            <div class="c-after__icons">
+                            <div class="c-after__icons d-inline-block">
                                 <img class="w-100" src="@/assets/images/lottie-plus-ae.png" alt="">
                             </div>
                             <h2 class="c-after__title">
@@ -618,6 +618,218 @@
                             </p>
                             <a href="" class="c-button c-button--primary">Learn more</a>
                         </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="c-platform position-relative">
+            <div class="c-platform__bg position-absolute w-100 h-100 d-none d-lg-block">
+                <img class="" src="@/assets/images/bg.png" alt="">
+            </div>
+            <div class="c-wrapper position-relative">
+                <div class="row align-items-center">
+                    <div class="col-12 col-md-6">
+                        <h2 class="c-platform__title text-center text-md-start">
+                            Collaborate on motion with the LottieFiles platform
+                        </h2>
+                        <p class="c-platform__resume text-center text-md-start">
+                            With over 4 million users worldwide, our platform makes 
+                            it a breeze for teams to collaborate on motion.
+                        </p>
+                    </div>
+                    <div class="col-6">
+                        <figure class="c-platform__figure d-none d-md-block">
+                            <img class="w-100 h-100 object-fit-contain" src="@/assets/images/astro.png" alt="">
+                        </figure>
+                    </div>
+                </div>
+                <div class="c-platform__board ">
+                    <div class="row gy-4">
+                        <div class="col-12 col-md-8">
+                            <div class="c-board-card c-board-card--green">
+                                <h3 class="c-board-card__title">Your private and team’s workspace</h3>
+                                <p class="c-board-card__resume">With over 4 million users worldwide, our platform makes it a breeze for teams to collaborate on motion.</p>
+                                <div class="c-board-card__video">
+                                    <video id="" preload autoplay loop muted class="w-100 h-100">
+                                        <source src="https://beyondthesummit.tv/_nuxt/videos/reel_bg.72984f0.webm" type="video/webm">
+                                    </video>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <div class="c-board-card c-board-card--blue">
+                                <h3 class="c-board-card__title"> Test your animations across web, iOS and Android</h3>
+                                <p class="c-board-card__resume">No-code testing for iOS, Android and Web.</p>
+                                <div class="c-board-card__video">
+                                    <video id="" preload autoplay loop muted class="w-100 h-100">
+                                        <source src="https://beyondthesummit.tv/_nuxt/videos/reel_bg.72984f0.webm" type="video/webm">
+                                    </video>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <div class="c-board-card c-board-card--pink">
+                                <h3 class="c-board-card__title">File size optimization</h3>
+                                <p class="c-board-card__resume">Significantly reduce the Lottie file size for better performance and load speeds.</p>
+                                <div class="c-board-card__video">
+                                    <video id="" preload autoplay loop muted class="w-100 h-100">
+                                        <source src="https://beyondthesummit.tv/_nuxt/videos/reel_bg.72984f0.webm" type="video/webm">
+                                    </video>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-8">
+                            <div class="c-board-card c-board-card--yellow">
+                                <h3 class="c-board-card__title">Lottie Color Palette</h3>
+                                <p class="c-board-card__resume">Personalize your Lottie animations using your brand colors or a color Palette of your choice.</p>
+                                <div class="c-board-card__video">
+                                    <video id="" preload autoplay loop muted class="w-100 h-100">
+                                        <source src="https://beyondthesummit.tv/_nuxt/videos/reel_bg.72984f0.webm" type="video/webm">
+                                    </video>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center mt-4">
+                    <a href="" class="c-button c-button--primary">Get Started <span>- It's Free</span></a>
+                </div>
+            </div>
+        </div>
+        <div class="c-tools">
+            <div class="c-wrapper">
+                <div class="row align-items-center">
+                    <div class="col-12 col-md-5">
+                        <h2 class="c-tools__title text-center text-md-start">
+                            Integrates seamlessly with your favorite tools
+                        </h2>
+                        <p class="c-tools__resume text-center text-md-start">
+                            LottieFiles has plugins and integrations for all popular design and developer Tools.
+                        </p>
+                    </div>
+                    <div class="col-12 col-md-7">
+                        <ul class="c-tools__list d-flex justify-content-start align-items-center flex-wrap">
+                            <li>
+                                <a>
+                                    <img src="@/assets/images/tools/ae.svg" alt="">
+                                    <p>
+                                        Adobe After Effects
+                                    </p>
+                                </a> 
+                            </li>
+                            <li>
+                                <a>
+                                    <img src="@/assets/images/tools/canva.svg" alt="">
+                                    <p>
+                                        canva
+                                    </p>
+                                </a> 
+                            </li>
+                            <li>
+                                <a>
+                                    <img src="@/assets/images/tools/figma.svg" alt="">
+                                    <p>
+                                        figma
+                                    </p>
+                                </a> 
+                            </li>
+                            <li>
+                                <a>
+                                    <img src="@/assets/images/tools/xd.svg" alt="">
+                                    <p>
+                                        Adobe XD
+                                    </p>
+                                </a> 
+                            </li>
+                            <li>
+                                <a>
+                                    <img src="@/assets/images/tools/sketch.svg" alt="">
+                                    <p>
+                                        Sketch
+                                    </p>
+                                </a> 
+                            </li>
+                            <li>
+                                <a>
+                                    <img src="@/assets/images/tools/google.svg" alt="">
+                                    <p>
+                                        G Suit
+                                    </p>
+                                </a> 
+                            </li>
+                            <li>
+                                <a>
+                                    <img src="@/assets/images/tools/office.svg" alt="">
+                                    <p>
+                                        Office
+                                    </p>
+                                </a> 
+                            </li>
+                            <li>
+                                <a>
+                                    <img src="@/assets/images/tools/framer.svg" alt="">
+                                    <p>
+                                        Framer
+                                    </p>
+                                </a> 
+                            </li>
+                            <li>
+                                <a>
+                                    <img src="@/assets/images/tools/microsoft.svg" alt="">
+                                    <p>
+                                        Windows
+                                    </p>
+                                </a> 
+                            </li>
+                            <li>
+                                <a>
+                                    <img src="@/assets/images/tools/apple.svg" alt="">
+                                    <p>
+                                        Apple
+                                    </p>
+                                </a> 
+                            </li>
+                            <li>
+                                <a>
+                                    <img src="@/assets/images/tools/protopie.svg" alt="">
+                                    <p>
+                                        Protopie
+                                    </p>
+                                </a> 
+                            </li>
+                            <li>
+                                <a>
+                                    <img src="@/assets/images/tools/elementor.svg" alt="">
+                                    <p>
+                                        Elementor
+                                    </p>
+                                </a> 
+                            </li>
+                            <li>
+                                <a>
+                                    <img src="@/assets/images/tools/webflow.svg" alt="">
+                                    <p>
+                                        Webflow
+                                    </p>
+                                </a> 
+                            </li>
+                            <li>
+                                <a>
+                                    <img src="@/assets/images/tools/animate.svg" alt="">
+                                    <p>
+                                        Adobe Animate
+                                    </p>
+                                </a> 
+                            </li>
+                            <li>
+                                <a>
+                                    <img src="@/assets/images/tools/wordpress.svg" alt="">
+                                    <p>
+                                        Wordpress
+                                    </p>
+                                </a> 
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
