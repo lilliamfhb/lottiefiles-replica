@@ -1,8 +1,9 @@
 .c-footer {
-    background: $soft-gray;
+    background: $white;
     padding: 3rem 1.25rem;
     color: $secondary-color;
     overflow: hidden;
+    position: relative;
 
     &__subtitle {
         margin-bottom: 1.5rem;

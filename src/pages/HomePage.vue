@@ -651,7 +651,7 @@
                                 <p class="c-board-card__resume">With over 4 million users worldwide, our platform makes it a breeze for teams to collaborate on motion.</p>
                                 <div class="c-board-card__video">
                                     <video id="" preload autoplay loop muted class="w-100 h-100">
-                                        <source src="https://beyondthesummit.tv/_nuxt/videos/reel_bg.72984f0.webm" type="video/webm">
+                                        <source src="https://beyondthesummit.tv/_nuxt/videos/reel_bg.4cc5516.mp4" type="video/webm">
                                     </video>
                                 </div>
                             </div>
@@ -662,7 +662,7 @@
                                 <p class="c-board-card__resume">No-code testing for iOS, Android and Web.</p>
                                 <div class="c-board-card__video">
                                     <video id="" preload autoplay loop muted class="w-100 h-100">
-                                        <source src="https://beyondthesummit.tv/_nuxt/videos/reel_bg.72984f0.webm" type="video/webm">
+                                        <source src="https://beyondthesummit.tv/_nuxt/videos/reel_bg.4cc5516.mp4" type="video/webm">
                                     </video>
                                 </div>
                             </div>
@@ -673,7 +673,7 @@
                                 <p class="c-board-card__resume">Significantly reduce the Lottie file size for better performance and load speeds.</p>
                                 <div class="c-board-card__video">
                                     <video id="" preload autoplay loop muted class="w-100 h-100">
-                                        <source src="https://beyondthesummit.tv/_nuxt/videos/reel_bg.72984f0.webm" type="video/webm">
+                                        <source src="https://beyondthesummit.tv/_nuxt/videos/reel_bg.4cc5516.mp4" type="video/webm">
                                     </video>
                                 </div>
                             </div>
@@ -684,7 +684,7 @@
                                 <p class="c-board-card__resume">Personalize your Lottie animations using your brand colors or a color Palette of your choice.</p>
                                 <div class="c-board-card__video">
                                     <video id="" preload autoplay loop muted class="w-100 h-100">
-                                        <source src="https://beyondthesummit.tv/_nuxt/videos/reel_bg.72984f0.webm" type="video/webm">
+                                        <source src="https://beyondthesummit.tv/_nuxt/videos/reel_bg.4cc5516.mp4" type="video/webm">
                                     </video>
                                 </div>
                             </div>
@@ -893,6 +893,101 @@
                                         View showcase <Icon icon="ph:arrow-right-light" />
                                     </a>
                                 </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="c-reviews">
+            <div class="c-wrapper">
+                <h2 class="c-reviews__title text-center">Design teams love LottieFiles</h2>
+                <div class="c-reviews__content">
+                    <div class="row gy-4 gx-4">
+                        <div class="col-12 col-md-4">
+                            <div class="c-review d-flex flex-column justify-content-between">
+                                <div>
+                                    <figure class="c-review__top">
+                                        <img src="@/assets/images/reviews/disney.svg" alt="">
+                                    </figure>
+                                    <p class="c-review__text">
+                                        "LottieFiles has extended my career by 10 years."
+                                    </p>
+                                </div>
+                                <div class="c-review__bottom d-flex">
+                                    <img class="c-review__user" src="@/assets/images/user.png" alt="">
+                                    <div>
+                                        <p class="c-review__name">Anibal Koliren</p>
+                                        <p class="c-review__position">Motion Lead at DisneyNow</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <div class="c-review d-flex flex-column justify-content-between">
+                                <div>
+                                    <figure class="c-review__top">
+                                        <img src="@/assets/images/reviews/headspace.svg" alt="">
+                                    </figure>
+                                    <p class="c-review__text">
+                                        "Lottie integrates swifty with my workflow, has a small footprint, I can share ideas with my teams rapidly."
+                                    </p>
+                                </div>
+                                <div class="c-review__bottom d-flex">
+                                    <img class="c-review__user" src="@/assets/images/user.png" alt="">
+                                    <div>
+                                        <p class="c-review__name">Anibal Koliren</p>
+                                        <p class="c-review__position">Motion Lead at DisneyNow</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <div class="c-review d-flex flex-column justify-content-between">
+                                <div>
+                                    <figure class="c-review__top">
+                                        <img src="@/assets/images/reviews/gojek.svg" alt="">
+                                    </figure>
+                                    <p class="c-review__text">
+                                        "LottieFiles are super infused to all our products and services to get the personalized feeling just right."
+                                    </p>
+                                </div>
+                                <div class="c-review__bottom d-flex">
+                                    <img class="c-review__user" src="@/assets/images/user.png" alt="">
+                                    <div>
+                                        <p class="c-review__name">Anibal Koliren</p>
+                                        <p class="c-review__position">Motion Lead at DisneyNow</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <a href="" class="c-button c-button--primary">Read customer stories</a>
+                </div>
+            </div>
+        </div>
+        <div class="c-goodbye">
+            <div class="c-wrapper">
+                <div class="row align-items-center justify-content-between">
+                    <div class="col-12 col-sm-6 col-md-5 col-lg-4 dog">
+                        <figure class="c-goodbye__figure">
+                            <img src="@/assets/images/dog.png" alt="">
+                        </figure>
+                    </div>
+                    <div class="col-12 col-sm-6 md-6 lg-6">
+                        <div class="text-center text-sm-start">
+                            <p class="c-goodbye__subtitle">
+                                Motion made simple.
+                            </p>
+                            <h2 class="c-goodbye__title">
+                                Push your animation game to the next level.
+                            </h2>
+                            <div>
+                                <button class="c-button c-button--primary">
+                                    Get Started <span>- It's Free</span>
+                                </button>
                             </div>
                         </div>
                     </div>

@@ -408,6 +408,7 @@
         .c-motion {
             background: $soft-gray;
             padding: 0 1.25rem;
+            overflow: hidden;
 
             .c-wrapper {
                 position: relative;
@@ -675,6 +676,127 @@
                 }
             }
         }
+
+        .c-reviews {
+            background: $soft-gray;
+            padding: 2rem 1.25rem;
+            
+            &__title {
+                font-size: 2.25rem;
+                font-family: 'averta-b';
+                color: $text-strong;
+                margin-bottom: 2.25rem;
+            }
+
+            &__content {
+                padding-bottom: 2rem;
+            }
+
+            .c-button {
+                padding: 1rem 2rem;
+                font-size: 1rem;
+                border-radius: 0.75rem;
+            }
+
+            .c-review {
+                box-shadow: 0 4px 8px 0 rgba(0,0,0,.12), 0 2px 4px 0 rgba(0,0,0,.08);
+                padding: 1.25rem;
+                border-radius: 0.75rem;
+                height: 100%;
+
+                &__top {
+                    margin-bottom: 1.25rem;
+
+                    img {
+                        max-width: 150px;
+                    }
+                }
+
+                &__text {
+                    color: $secondary-medium;
+                    margin-bottom: 1.25rem;
+                    line-height: 16px;
+                    line-height: 1.5;
+                }
+
+                &__user {
+                    width: 35px;
+                    height: 35px;
+                    flex-shrink: 0;
+                    border-radius: 50%;
+                    overflow: hidden;
+                    margin-right: 0.75rem;
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                        object-position: center;
+                    }
+                }
+
+                &__bottom {
+                    display: flex;
+                    align-items: center;
+                    
+                    p {
+                        font-size: 0.875rem;
+                        margin: 0;
+                        line-height: 16px;
+                    }
+                }
+
+                
+            }
+        }
+
+        .c-goodbye {
+            padding: 3rem 1.25rem;
+
+            .c-wrapper {
+                position: relative;
+
+                &:after {
+                    content: "";
+                    position: absolute;
+                    height: 1px;
+                    width: 100%;
+                    background: gray;
+                    bottom: -1.25rem;
+                    left: 0;
+                    opacity: 0.1;
+                }
+            }
+
+            &__figure {
+                width: 100%;
+                margin-bottom: 2.5rem;
+
+                img {
+                    width: 100%;
+                }
+            }
+
+            &__title {
+                font-size: 2.25rem;
+                font-family: 'averta-b';
+                color: $text-strong;
+                margin-bottom: 2.5rem;
+            }
+
+            &__subtitle {
+                font-size: 1.25rem;
+                margin-bottom: 1.25rem;
+                font-family: 'averta-b';
+                color: $secondary-color;
+            }
+
+            .c-button {
+                padding: 0.85rem 2rem;
+                font-size: 1rem;
+            }
+        }
+
     }
 }
 
@@ -880,6 +1002,37 @@
                     font-size: 1rem;
                 }
             }
+
+            .c-reviews {
+                &__title {
+                    font-size: 2.25rem;
+                }
+
+                .c-button {
+                    font-size: 1.125rem;
+                    padding: 1rem 4rem;
+                    border-radius: 1rem;
+                }
+            }
+
+            .c-goodbye {
+                .dog {
+                    order: 2;
+                }
+
+                &__title {
+                    font-size: 3rem;
+                }
+
+                .c-button {
+                    font-size: 1.125rem;
+                    padding: 1rem 4rem;
+                }
+
+                &__figure {
+                    margin-bottom: 0;
+                }
+            }
         }
     }
 }
@@ -1003,6 +1156,24 @@
 
                 &__board {
                     padding: 0 1.25rem;
+                }
+            }
+
+            .c-reviews {
+                padding: 6rem 0 2rem;
+
+                &__content {
+                    padding: 2.5rem;
+                }
+            }
+
+            .c-goodbye {
+                padding: 2.5rem 0;
+
+                .c-wrapper {
+                    &::after {
+                        bottom: -2rem;
+                    }
                 }
             }
         }
