@@ -647,7 +647,7 @@
                     <div class="row gy-4">
                         <div class="col-12 col-md-8">
                             <div class="c-board-card c-board-card--green">
-                                <h3 class="c-board-card__title">Your private and team’s workspace</h3>
+                                <h3 class="c-board-card__title">Your private and team’s worksa cep  </h3>
                                 <p class="c-board-card__resume">With over 4 million users worldwide, our platform makes it a breeze for teams to collaborate on motion.</p>
                                 <div class="c-board-card__video">
                                     <video id="" preload autoplay loop muted class="w-100 h-100">
