@@ -994,17 +994,31 @@
                 </div>
             </div>
         </div>
+
+        <lottie :options="defaultOptions" :width="500" :height="300" v-on:animCreated="handleAnimation"></lottie>
+
+        <div class="d-flex justify-content-center align-items-center flex-wrap">
+                <button v-on:click="stop" class="c-button c-button--primary">Stop</button>
+                <button v-on:click="pause" class="c-button c-button--primary m-3">Pause</button>
+                <button v-on:click="play" class="c-button c-button--primary">Play</button>
+        </div>
+
     </section>
 </template>
 
 <script>
-import { mapState, mapActions } from 'vuex'
+import { mapState, mapActions } from 'vuex';
+import * as animationData from '@/assets/json/confetti.json'
 
 export default {
     name: 'HomePage',
     data() {
         return {
             homeTab: 'motion',
+            defaultOptions: {
+                animationData: animationData.default,
+            },
+            animationSpeed: 1,
             bodyTabs: {
                 one : [
                     {
@@ -1119,6 +1133,9 @@ export default {
     computed: {
         ...mapState(['title'])
     },
+    mounted() {
+        this.stop();
+    },
     methods: {
         ...mapActions(['modificarAction']),
         modi(text) {  
@@ -1139,7 +1156,27 @@ export default {
                     selectedBlock.active = true;
                 },500)
             }
+        },
+
+        handleAnimation: function (anim) {
+            this.anim = anim;
+        },
+    
+        stop: function () {
+            this.anim.stop();
+        },
+    
+        play: function () {
+            this.anim.play();
+        },
+    
+        pause: function () {
+            this.anim.pause();
+        },
+    
+        onSpeedChange: function () {
+            this.anim.setSpeed(this.animationSpeed);
         }
-    }
+    },
 }
 </script>
